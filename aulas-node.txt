@@ -1,1010 +1,3 @@
-Script started on 2022-06-04 09:58:12-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="204" LINES="55"]
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[1m[31my[0m[39m[90marn --version[39m[13D[1m[31my[1m[31ma[0m[39m[1m[31my[1m[31ma[1m[31mr[0m[39m[0m[32my[0m[32ma[0m[32mr[32mn[39m[39m [39mi[39m [39m [39m [39m [39m [39m [39m [39m [8Dnit -y[?1l>[?2004l
-]2;yarn init -y]1;yarn[2K[1G[1myarn init v1.22.10[22m
-[2K[1G[33mwarning[39m The yes flag has been set. This will automatically answer yes to all questions, which may have security implications.
-[2K[1G[32msuccess[39m Saved package.json
-[2K[1GDone in 0.03s.
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[32ml[39m[90ms[39m[32ml[32ms[39m[?1l>[?2004l
-]2;ls --color=tty]1;lsaulas-node.txt  package.json
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90md ignite-node-aulas[39m[19D[1m[31mc[1m[31mo[0m[39m[90md[90me[90m [90m.[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[1m[31mc[1m[31mo[1m[31md[0m[39m[0m[32mc[0m[32mo[0m[32md[32me[39m[39m [39m[4m.[24m[?1l>[?2004l
-]2;code .]1;code[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90mode .[39m[0m[32mc[32md[39m[90m [90mi[90mg[90mn[90mite-node-aulas[39m[18D[39m [39m[4m.[24m[90m.[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[4m.[39m[4m.[24m[?1l>[?2004l
-]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects]1;~/Projects[0m[27m[24m[J[01;32m➜  [36mProjects[00m [K[?1h=[?2004h[1m[31mm[0m[39m[90mkdir ignite-node-aulas[39m[22D[0m[32mm[32mv[39m[90m [90mi[90md[90me[90ma[90m-[90mI[90mC[90m-[90m2[90m1[90m3[90m.[90m7[90m1[90m7[90m2[90m.[90m2[90m5[90m [90m../[39m[24D[39m [39m[4mi[24m[4mi[39m[4mg[39m[4mn[39m[4mi[39m[4mt[39m[4me[39m[4m-[39m[4mn[39m[4mo[39m[4md[39m[4me[39m[4m-[39m[4ma[39m[4mu[39m[4ml[39m[4ma[39m[4ms[39m[1m[4m/[0m[24m[39m [39m [39m [39m [39m [4ms[24m[0m[24m node-express            [4ma[24m[24m [4ml[24m[24m [4mu[24m[24m [4ma[24m[24m [4m-[24m[24m [4me[24m[24m [4md[24m[24m [4mo[24m[24m [4mn[24m[24m [4m-[24m[24m[90mt[90memplate-componentizando-a-aplicacao. ignite-template-componentizando-a-aplicacao[39m[81D[4me[24m[24m[90m-[39m[4mt[24m[24m[90me[39m[4mi[24m[24m[90mt[39m[4mn[24m[24m[90mi[39m[4mg[24m[24m[90mn[39m[4mi[24m[24m[90md[90me[90ma[90m-[90mI[90mC[90m-[90m2[90m1[90m3[90m.[90m7[90m1[90m7[90m2[90m.[90m2[90m5[90m [90m.[90m.[90m/[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [87D[24m[90mi[90m [1m[31mm[0m[39m[90mk[90md[90mi[90mr[90m [90mi[90mg[90mn[90mi[90mt[90me[90m-[90mn[90mo[90md[90me[90m-[90ma[90mu[90ml[90ma[90ms[39m[39m [39m [39m [25D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [23D[4mc[24m[90md ..[39m[24m[32mc[32md[39m[39m [39m[4mi[24m[90mg[90mnite-node-aulas[39m[16D[4mi[39m[4mg[24m[4mg[39m[4mn[39m[4mi[39m[4mt[39m[4me[39m[4m-[39m[4mn[39m[4mo[39m[4md[39m[4me[39m[4m-[39m[4ma[39m[4mu[39m[4ml[39m[4ma[39m[4ms[1m[4m/[0m[24m[4ms[24m[0m[24m [?1l>[?2004l
-]2;cd ignite-node-aulas]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[32ml[39m[90ms[39m[32ml[32ms[39m[?1l>[?2004l
-]2;ls --color=tty]1;lsaulas-node.txt  package.json
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[32ml[39m[90ms[39m[32ml[32ms[39m[?1l>[?2004l
-]2;ls --color=tty]1;lsaulas-node.txt  package.json
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[1m[31mm[0m[39m[90mkdir ignite-node-aulas[39m[22D[1m[31mm[1m[31mk[0m[39m[1m[31mm[1m[31mk[1m[31md[0m[39m[1m[31md[1m[31mi[0m[39m[0m[32mm[0m[32mk[0m[32md[0m[32mi[32mr[39m[39m [39ms[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16Der  rc[?1l>[?2004l
-]2;mkdir src]1;mkdir[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90md ignite-node-aulas[39m[19D[0m[32mc[32md[39m[39m [39m[4ms[24m[90me[90mr[90ma[90ms[90ma[90m-[90me[90mx[90mp[90me[90mr[90mi[90ma[90mn[90m-[90mt[90meste[39m[20D[4ms[39m[4mr[39m[4mc[39m[1m[4m/[0m[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[4mc[24m[0m[24m [?1l>[?2004l
-]2;cd src]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas/src]1;..ode-aulas/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [K[?1h=[?2004h[1m[31mt[0m[39m[90mar -xvzf ideaIC-2021.3.3.tar.gz -C /opt/intellig-java[39m[53D[1m[31mt[1m[31mo[0m[39m[90mu[90mc[90mh[90m [90mi[90mn[90mi[90mt[90m.[90mp[90mh[90mp[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [52D[1m[31mt[1m[31mo[1m[31mu[0m[39m[1m[31mu[1m[31mc[0m[39m[0m[32mt[0m[32mo[0m[32mu[0m[32mc[32mh[39m[39m [39mi[39mn[39md[39m [39m [39m [39m [39m ex.js[?1l>[?2004l
-]2;touch index.js]1;touch[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas/src]1;..ode-aulas/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90md src[39m[0m[32mc[32md[39m[39m [39m[4m.[24m[90m.[39m[39m [4m.[39m[4m.[24m[?1l>[?2004l
-]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[1m[31my[0m[39m[90marn init -y[39m[11D[1m[31my[1m[31ma[0m[39m[1m[31my[1m[31ma[1m[31mr[0m[39m[0m[32my[0m[32ma[0m[32mr[32mn[39m[39m [39mi[39mn[39ms[39m [39m [39m [39m tall express[?1l>[?2004l
-]2;yarn install express]1;yarn[2K[1G[1myarn install v1.22.10[22m
-[2K[1G[34minfo[39m No lockfile found.
-[2K[1G[31merror[39m `install` has been replaced with `add` to add new dependencies. Run "yarn add express" instead.
-[2K[1G[34minfo[39m Visit [1mhttps://yarnpkg.com/en/docs/cli/install[22m for documentation about this command.
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;31m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[1m[31my[0m[39m[90marn install express[39m[19D[1m[31my[1m[31ma[0m[39m[1m[31my[1m[31ma[1m[31mr[0m[39m[0m[32my[0m[32ma[0m[32mr[32mn[39m[39m [39m[4ma[24m[90md[90md[90m [90ms[90ma[90ms[90ms[39m[39m [39m [39m [39m [39m [39m [39m [14D[24ma[39md[39md[39m [39me[39m [39m [39m xpress[?1l>[?2004l
-]2;yarn add express]1;yarn[2K[1G[1myarn add v1.22.10[22m
-[2K[1G[34minfo[39m No lockfile found.
-[2K[1G[2m[1/4][22m Resolving packages...
-[1G⠁ [0K[1G⠂ express[0K[1G⠄ express[0K[1G⡀ vary@~1.1.2[0K[1G⢀ unpipe@1.0.0[0K[1G⠠ unpipe@~1.0.0[0K[1G⠐ ipaddr.js@1.9.1[0K[1G⠈ send@0.18.0[0K[1G⠁ mime-types@~2.1.24[0K[1G⠂ safer-buffer@>= 2.1.2 < 3[0K[1G⠄ object-inspect@^1.9.0[0K[1G⡀ get-intrinsic@^1.0.2[0K[1G⢀ get-intrinsic@^1.0.2[0K[1G⠠ get-intrinsic@^1.0.2[0K[1G⠐ get-intrinsic@^1.0.2[0K[1G⠈ get-intrinsic@^1.0.2[0K[1G⠁ get-intrinsic@^1.0.2[0K[1G⠂ get-intrinsic@^1.0.2[0K[1G⠄ get-intrinsic@^1.0.2[0K[1G⡀ toidentifier@1.0.1[0K[1G⢀ toidentifier@1.0.1[0K[1G⠠ toidentifier@1.0.1[0K[1G⠐ mime-db@1.52.0[0K[1G⠈ unpipe@1.0.0[0K[1G⠁ unpipe@1.0.0[0K[1G⠂ unpipe@1.0.0[0K[1G⠄ has-symbols@^1.0.1[0K[1G⡀ has-symbols@^1.0.1[0K[1G⢀ has-symbols@^1.0.1[0K[1G⠠ has-symbols@^1.0.1[0K[1G⠐ has-symbols@^1.0.1[0K[1G⠈ has-symbols@^1.0.1[0K[1G⠁ has-symbols@^1.0.1[0K[1G⠂ has-symbols@^1.0.1[0K[1G⠄ has-symbols@^1.0.1[0K[1G⡀ has-symbols@^1.0.1[0K[1G⢀ has-symbols@^1.0.1[0K[1G⠠ has-symbols@^1.0.1[0K[1G⠐ has-symbols@^1.0.1[0K[1G⠈ has-symbols@^1.0.1[0K[1G⠁ has-symbols@^1.0.1[0K[2K[1G[2K[1G[2m[2/4][22m Fetching packages...
-[2K[1G[1G[---------------------------------------------------------] 0/57[1G[#############--------------------------------------------] 13/57[1G[###########################------------------------------] 27/57[1G[#############################################------------] 45/57[1G[####################################################-----] 52/57[2K[1G[2m[3/4][22m Linking dependencies...
-[1G[#########################################################] 57/57[2K[1G[2K[1G[1G[---------------------------------------------------------] 0/57[2K[1G[2K[1G[1G[---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 0/422[1G[###########################################################--------------------------------------------------------------------------------------------------------------------------------------] 128/422[2K[1G[2K[1G[1G[-----------------------------------------------------------------------------------------------------------------] 0/113[2K[1G[2m[4/4][22m Building fresh packages...
-[1B[2K[1G[32msuccess[39m Saved lockfile.
-[2K[1G[33mwarning[39m Your current version of Yarn is out of date. The latest version is "1.22.19", while you're on "1.22.10".
-[2K[1G[34minfo[39m To upgrade, run the following command:
-[2K[1G[2m$ curl --compressed -o- -L https://yarnpkg.com/install.sh | bash[22m
-[2K[1G[32msuccess[39m Saved 33 new dependencies.
-[2K[1G[34minfo[39m Direct dependencies
-[2K[1G└─ express@4.18.1
-[2K[1G[34minfo[39m All dependencies
-├─ accepts@1.3.8
-├─ array-flatten@1.1.1
-├─ body-parser@1.20.0
-├─ call-bind@1.0.2
-├─ content-disposition@0.5.4
-├─ cookie-signature@1.0.6
-├─ cookie@0.5.0
-├─ ee-first@1.1.1
-├─ express@4.18.1
-├─ finalhandler@1.2.0
-├─ forwarded@0.2.0
-├─ has-symbols@1.0.3
-├─ has@1.0.3
-├─ inherits@2.0.4
-├─ ipaddr.js@1.9.1
-├─ media-typer@0.3.0
-├─ merge-descriptors@1.0.1
-├─ methods@1.1.2
-├─ mime-db@1.52.0
-├─ mime-types@2.1.35
-├─ mime@1.6.0
-├─ ms@2.0.0
-├─ negotiator@0.6.3
-├─ object-inspect@1.12.2
-├─ path-to-regexp@0.1.7
-├─ proxy-addr@2.0.7
-├─ raw-body@2.5.1
-├─ safer-buffer@2.1.2
-├─ serve-static@1.15.0
-├─ side-channel@1.0.4
-├─ toidentifier@1.0.1
-├─ utils-merge@1.0.1
-└─ vary@1.1.2
-[2K[1GDone in 3.27s.
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90md ..[39m[0m[32mc[32md[39m[39m [39m[4ms[24m[90mr[90mc[39m[4ms[39m[4mr[24m[4mr[39m[4mc[1m[4m/[0m[24m[4mc[24m[0m[24m [?1l>[?2004l
-]2;cd src]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas/src]1;..ode-aulas/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90md src[39m[1m[31mc[1m[31mo[0m[39m[90md[90me[90m [90m.[39m[1m[31mc[1m[31mo[1m[31md[0m[39m[0m[32mc[0m[32mo[0m[32md[32me[39m[1m[31mc[1m[31mo[1m[31md[1m[31me[1m[31m.[0m[39m[39m [0m[32mc[0m[32mo[0m[32md[0m[32me[39m[0m[90m [90m.[39m[39m [39m[4m.[24m[24m[90m.[39m[90m [1m[31mc[1m[31mo[1m[31md[0m[39m[90me[1m[31mc[1m[31mo[0m[39m[0m[90md[1m[31mc[0m[39m[0m[90md[90m [90ms[90mr[90mc[39m[0m[39m [39m [39m [39m [39m [39m [1m[31mn[0m[39m[90mvm use 14[39m[9D[1m[31mn[1m[31mo[0m[39m[90md[90me[90m [90m-[90m-[90mv[90me[90mr[90msion[39m[12D[1m[31mn[1m[31mo[1m[31md[0m[39m[0m[32mn[0m[32mo[0m[32md[32me[39m[39m [39m[4mi[24m[39m [39m [39m [39m [39m [39m [39m [39m [8D[4mi[4mn[24m[4mn[4md[24m[4md[4me[24m[4me[4mx[24m[4mx[4m.[24m[4m.[4mj[24m[4mj[4ms[24m[?1l>[?2004l
-]2;node index.js]1;node^C
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas/src]1;..ode-aulas/src[0m[27m[24m[J[01;31m➜  [36msrc[00m [K[?1h=[?2004h[32mnode[39m [4mindex.js[24m[?1l>[?2004l
-]2;node index.js]1;node^C
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas/src]1;..ode-aulas/src[0m[27m[24m[J[01;31m➜  [36msrc[00m [K[?1h=[?2004h[1m[31my[0m[39m[90marn add express[39m[15D[1m[31my[1m[31ma[0m[39m[1m[31my[1m[31ma[1m[31mr[0m[39m[0m[32my[0m[32ma[0m[32mr[32mn[39m[39m [39ma[39md[39md[39m [39mn[39m [39m [39m [39m [39m [39m odeman -D[?1l>[?2004l
-]2;yarn add nodeman -D]1;yarn[2K[1G[1myarn add v1.22.10[22m
-[2K[1G[2m[1/4][22m Resolving packages...
-[1G⠁ [0K[1G⠂ nodeman[0K[1G⠄ nodeman[0K[1G⡀ nodeman[0K[1G⢀ nodeman[0K[1G⠠ nodeman[0K[1G⠐ nodeman[0K[1G⠈ nodeman[0K[1G⠁ nodeman[0K[1G⠂ nodeman[0K[1G⠄ nodeman[0K[1G⡀ nodeman[0K[1G⢀ nodeman[0K[1G⠠ nodeman[0K[1G⠐ nodeman[0K[1G⠈ nodeman[0K[1G⠁ nodeman[0K[1G⠂ nodeman[0K[1G⠄ nodeman[0K[1G⡀ colors@*[0K[2K[1G[2K[1G[2m[2/4][22m Fetching packages...
-[2K[1G[1G[-----------------------------------------------------------] 0/59[1G[#########################################################--] 57/59[1G[##########################################################-] 58/59[2K[1G[2m[3/4][22m Linking dependencies...
-[2K[1G[2K[1G[1G[-----------------------------------------------------------] 0/59[2K[1G[2K[1G[1G[---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 0/317[1G[##############################################################################-------------------------------------------------------------------------------------------------------------------] 128/317[2K[1G[2K[1G[1G[---------------------------------------------------------------------------------------------------------------------] 0/117[2K[1G[2m[4/4][22m Building fresh packages...
-[1B[2K[1G[32msuccess[39m Saved lockfile.
-[2K[1G[32msuccess[39m Saved 2 new dependencies.
-[2K[1G[34minfo[39m Direct dependencies
-[2K[1G└─ nodeman@1.1.2
-[2K[1G[34minfo[39m All dependencies
-├─ colors@1.4.0
-└─ nodeman@1.1.2
-[2K[1GDone in 1.93s.
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas/src]1;..ode-aulas/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [K[?1h=[?2004h [90mapt install exa[39m
-[K[A[8C[1B[K[A[8C [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [1B[K[A[7C[1m[31mc[0m[39m[90md src[39m[0m[32mc[32md[39m[39m [39m[4m.[24m[90m.[39m[39m [4m.[39m[4m.[24m[?1l>[?2004l[1B]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/ignite-node-aulas]1;..te-node-aulas[0m[27m[24m[J[01;32m➜  [36mignite-node-aulas[00m [K[?1h=[?2004h[32mg[39m[90mo[39m[1m[31mg[1m[31mi[0m[39m[90mt status[39m[8D[0m[32mg[0m[32mi[32mt[39m[39m [90m [1m[31mg[1m[31mi[0m[39m[90mt[0m[32mg[39m[0m[90mo[39m[39m [39m [39m [39m [39m [39m [39m [39m [9D[39m [39m [1m[31mc[0m[39m[90md ..[39m[0m[32mc[32md[39m[39m [39m[4m.[24m[4m.[39m[4m.[24m[?1l>[?2004l
-]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects]1;~/Projects[0m[27m[24m[J[01;32m➜  [36mProjects[00m [K[?1h=[?2004h[1m[31mm[0m[39m[90mkdir src[39m[8D[0m[32mm[32mv[39m[90m [90mi[90md[90me[90ma[90m-[90mI[90mC-213.7172.25 ../[39m[24D[39m [39m[4mi[24m[4mi[39m[4mg[24m[90mn[90mi[90mt[90me[90m-[90mt[90me[90mm[90mp[90ml[90ma[90mt[90me[90m-[90mc[90mo[90mm[90mp[90mo[90mn[90me[90mntizando-a-aplicacao. ignite-template-componentizando-a-aplicacao[39m[86D[4mg[39m[4mn[39m[4mi[39m[4mt[39m[4me[39m[4m-[39m[4mn[39m[4mo[39m[4md[39m[4me[39m[4m-[39m[4ma[39m[4mu[39m[4ml[39m[4ma[39m[4ms[39m[1m[4m/[0m[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [70D[4ms[24m[0m[24m b  basic-node-express[?1l>[?2004l
-]2;mv ignite-node-aulas basic-node-express]1;mv[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects]1;~/Projects[0m[27m[24m[J[01;32m➜  [36mProjects[00m [K[?1h=[?2004h[4mc[24m[90md ..[39m[24m[32mc[32md[39m[39m [39m[4mb[24m[90mi[90mn[39m[4mb[39m[4ma[24m[90ms[90melinker[39m[8D[4ma[39m[4ms[39m[4mi[39m[4mc[39m[4m-[39m[4mn[39m[4mo[39m[4md[39m[4me[4m-express[1m[4m/[0m[24m[4ms[24m[0m[24m [?1l>[?2004l
-]2;cd basic-node-express]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [K[?1h=[?2004h[32ml[39m[90ms[39m[32ml[32ms[39m[?1l>[?2004l
-]2;ls --color=tty]1;lsaulas-node.txt  [0m[01;34mnode_modules[0m  package.json  [01;34msrc[0m  yarn.lock
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [K[?1h=[?2004h[32mg[39m[90mo[39m[1m[31mg[1m[31mi[0m[39m[90mt status[39m[8D[0m[32mg[0m[32mi[32mt[39m[39m [39mi[90mn[90mi[90mt[39m[39m [39m [39mn[39mi[39mt[?1l>[?2004l
-]2;git init]1;gitInitialized empty Git repository in /home/milleo/Projects/basic-node-express/.git/
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90md basic-node-express[39m[20D[1m[31mc[1m[31ma[0m[39m[90mt[90m [90mt[90my[90mp[90me[90ms[90mc[90mr[90mi[90mp[90mt[39m[39m [39m [39m [39m [39m [39m [39m [19D[0m[32mc[0m[32ma[32mt[39m[39m [39m[4m.[24m[90ms[90ms[90mh[90m/[90mc[90mo[90mn[90mf[90mi[90mg[39m[10D[4m.[39m[4mg[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[4mg[4mit[1m[4m/[0m[24m[4mt[24m[0m[24m [?1l>[?2004l
-]2;cat .git]1;catcat: .git: Is a directory
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;31m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90mat .git[39m[0m[32mc[32md[39m[90m [90mb[90ma[90ms[90mi[90mc[90m-node-express[39m[19D[39m [39m,[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D [90mb[90masic-node-express[39m[18D[39m[4m.[24m[90m.[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[4m.[39m[4mg[24m[90mit[39m[4mg[39m[4mi[39m[4mt[1m[4m/[0m[24m[4mt[24m[0m[24m [?1l>[?2004l
-]2;cd .git]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express/.git]1;..-express/.git[0m[27m[24m[J[01;32m➜  [36m.git[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[32ml[39m[90ms[39m[32ml[32ms[39m[?1l>[?2004l
-]2;ls --color=tty]1;ls[0m[01;34mbranches[0m  config  description  FETCH_HEAD  FETCH_LOG  HEAD  [01;34mhooks[0m  [01;34minfo[0m  [01;34mobjects[0m  [01;34mrefs[0m
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express/.git]1;..-express/.git[0m[27m[24m[J[01;32m➜  [36m.git[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90md .git[39m[1m[31mc[1m[31ma[0m[39m[90mt[90m [90m.[90mg[90mi[90mt[39m[0m[32mc[0m[32ma[32mt[39m[39m [39m[4mc[24m[90mo[90mn[90mf[90mig[39m[24mc[39mn[39m [39m [39m [39m [4mc[24m[90mo[90mnfig[39m[4mc[39m[4mo[24m[4mo[39m[4mn[24m[4mn[39m[4mf[24m[4mf[39m[4mi[39m[4mg[24m[1m [0m[0m [?1l>[?2004l
-]2;cat config]1;cat[core]
-	repositoryformatversion = 0
-	filemode = true
-	bare = false
-	logallrefupdates = true
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express/.git]1;..-express/.git[0m[27m[24m[J[01;32m➜  [36m.git[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90mat config[39m[9D[1m[31mc[1m[31ma[0m[39m[0m[32mc[0m[32ma[32mt[39m[39m [39m[4mb[24m[39m [39m [39m [39m [39m [4mb[4mr[24m[4mr[4ma[24m[4ma[4mnches[1m[4m/[0m[24m[4ms[24m[0m[24m [?1l>[?2004l
-]2;cat branches]1;catcat: branches: Is a directory
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express/.git]1;..-express/.git[0m[27m[24m[J[01;31m➜  [36m.git[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[32mg[39m[90mit init[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39ma[90md[90md[90m [90m.[39m[39md[39md[39m [39m[4m.[24m[?1l>[?2004l
-]2;git add .]1;gitfatal: this operation must be run in a work tree
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express/.git]1;..-express/.git[0m[27m[24m[J[01;31m➜  [36m.git[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[32mg[39m[90mit add .[39m[8D[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[1m[31mc[0m[39m[90mat branches[39m[11D[0m[32mc[32md[39m[90m [90m.[90mg[90mi[90mt[39m[39m [39m [39m [39m [39m [10D[1m[31mc[1m[31md[1m[31m.[0m[39m[39m [39m [39m [39m [1m[31m.[1m[31m.[0m[39m[?1l>[?2004l
-]2;cd..]1;cd..zsh: command not found: cd..
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express/.git]1;..-express/.git[0m[27m[24m[J[01;31m➜  [36m.git[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90md..[39m[0m[32mc[32md[39m[39m [90m.[90mgit[39m[39m[4m.[24m[4m.[39m[4m.[24m[39m [39m [?1l>[?2004l
-]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[1m[31mc[0m[39m[90md ..[39m[0m[32mc[32md[39m[39m [39m[4m.[24m[24m[90m.[90m [1m[31mc[0m[39m[90md[0m[39m[39m [39m [39m [39m [39m [32mg[39m[90mit add .[39m[8D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39m[4ma[24m[24ma[39md[39md[39m [39m[4m.[24m[?1l>[?2004l
-]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit add .[39m[8D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39mo[39m [39m [39m [39m [90ma[90mdd .[39m[39mc[90mh[90me[90mc[90mk[90mout stable[39m[14D[39mo[90mm[90mm[90mi[90mt[90m [90m-[90mm[90m"[90m3[90m0[90m [90mm[90mi[90mnutos"[39m[19D[39mm[39mm[39mi[39mt[39m [39m-[39mm[33m"[39m[33m"[33mF[39m[90mi[90mn[90mi[90mg[90mh[90mi[90mn[90ms[90m [90mf[90mollow and unfollow endpoints and refactoring responses"[39m[65D[33mF[33mi[39m[33mi[33ms[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [63D[33ms[33mt[39m[33mt[33m [39m[33m [33mc[39m[33mc[33mo[39m[33mo[33mm[39m[33mm[33mm[39m[33mm[39m[39m [33mo[39m[39m [33mc[39m[39m [33m [39m[39m [33mt[39m[39m [33ms[39m[39m [33mi[39m[90mn[90mighins follow and unfollow endpoints and refactoring responses"[39m[64D[33mi[33mr[39m[90ms[90mt[90m [90mc[90mo[90mm[90mm[90mi[90mt[90m"[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [63D[33mr[33ms[39m[33ms[33mt[39m[33mt[33m [39m[33m [33mc[39m[33mc[33mo[39m[33mo[33mm[39m[33mm[33mm[39m[33mm[33mi[39m[33mi[33mt[39m[33mt[33m"[39m[?1l>[?2004l
-]2;git commit -m"First commit"]1;git[master (root-commit) a85cdfd] First commit
- 748 files changed, 105097 insertions(+)
- create mode 100644 aulas-node.txt
- create mode 120000 node_modules/.bin/_nodeman
- create mode 120000 node_modules/.bin/mime
- create mode 120000 node_modules/.bin/nodeman
- create mode 100644 node_modules/.yarn-integrity
- create mode 100644 node_modules/accepts/HISTORY.md
- create mode 100644 node_modules/accepts/LICENSE
- create mode 100644 node_modules/accepts/README.md
- create mode 100644 node_modules/accepts/index.js
- create mode 100644 node_modules/accepts/package.json
- create mode 100644 node_modules/array-flatten/LICENSE
- create mode 100644 node_modules/array-flatten/README.md
- create mode 100644 node_modules/array-flatten/array-flatten.js
- create mode 100644 node_modules/array-flatten/package.json
- create mode 100644 node_modules/body-parser/HISTORY.md
- create mode 100644 node_modules/body-parser/LICENSE
- create mode 100644 node_modules/body-parser/README.md
- create mode 100644 node_modules/body-parser/SECURITY.md
- create mode 100644 node_modules/body-parser/index.js
- create mode 100644 node_modules/body-parser/lib/read.js
- create mode 100644 node_modules/body-parser/lib/types/json.js
- create mode 100644 node_modules/body-parser/lib/types/raw.js
- create mode 100644 node_modules/body-parser/lib/types/text.js
- create mode 100644 node_modules/body-parser/lib/types/urlencoded.js
- create mode 100644 node_modules/body-parser/package.json
- create mode 100644 node_modules/bytes/History.md
- create mode 100644 node_modules/bytes/LICENSE
- create mode 100644 node_modules/bytes/Readme.md
- create mode 100644 node_modules/bytes/index.js
- create mode 100644 node_modules/bytes/package.json
- create mode 100644 node_modules/call-bind/.eslintignore
- create mode 100644 node_modules/call-bind/.eslintrc
- create mode 100644 node_modules/call-bind/.github/FUNDING.yml
- create mode 100644 node_modules/call-bind/.nycrc
- create mode 100644 node_modules/call-bind/CHANGELOG.md
- create mode 100644 node_modules/call-bind/LICENSE
- create mode 100644 node_modules/call-bind/README.md
- create mode 100644 node_modules/call-bind/callBound.js
- create mode 100644 node_modules/call-bind/index.js
- create mode 100644 node_modules/call-bind/package.json
- create mode 100644 node_modules/call-bind/test/callBound.js
- create mode 100644 node_modules/call-bind/test/index.js
- create mode 100644 node_modules/colors/LICENSE
- create mode 100644 node_modules/colors/README.md
- create mode 100644 node_modules/colors/examples/normal-usage.js
- create mode 100644 node_modules/colors/examples/safe-string.js
- create mode 100644 node_modules/colors/index.d.ts
- create mode 100644 node_modules/colors/lib/colors.js
- create mode 100644 node_modules/colors/lib/custom/trap.js
- create mode 100644 node_modules/colors/lib/custom/zalgo.js
- create mode 100644 node_modules/colors/lib/extendStringPrototype.js
- create mode 100644 node_modules/colors/lib/index.js
- create mode 100644 node_modules/colors/lib/maps/america.js
- create mode 100644 node_modules/colors/lib/maps/rainbow.js
- create mode 100644 node_modules/colors/lib/maps/random.js
- create mode 100644 node_modules/colors/lib/maps/zebra.js
- create mode 100644 node_modules/colors/lib/styles.js
- create mode 100644 node_modules/colors/lib/system/has-flag.js
- create mode 100644 node_modules/colors/lib/system/supports-colors.js
- create mode 100644 node_modules/colors/package.json
- create mode 100644 node_modules/colors/safe.d.ts
- create mode 100644 node_modules/colors/safe.js
- create mode 100644 node_modules/colors/themes/generic-logging.js
- create mode 100644 node_modules/content-disposition/HISTORY.md
- create mode 100644 node_modules/content-disposition/LICENSE
- create mode 100644 node_modules/content-disposition/README.md
- create mode 100644 node_modules/content-disposition/index.js
- create mode 100644 node_modules/content-disposition/package.json
- create mode 100644 node_modules/content-type/HISTORY.md
- create mode 100644 node_modules/content-type/LICENSE
- create mode 100644 node_modules/content-type/README.md
- create mode 100644 node_modules/content-type/index.js
- create mode 100644 node_modules/content-type/package.json
- create mode 100644 node_modules/cookie-signature/.npmignore
- create mode 100644 node_modules/cookie-signature/History.md
- create mode 100644 node_modules/cookie-signature/Readme.md
- create mode 100644 node_modules/cookie-signature/index.js
- create mode 100644 node_modules/cookie-signature/package.json
- create mode 100644 node_modules/cookie/HISTORY.md
- create mode 100644 node_modules/cookie/LICENSE
- create mode 100644 node_modules/cookie/README.md
- create mode 100644 node_modules/cookie/SECURITY.md
- create mode 100644 node_modules/cookie/index.js
- create mode 100644 node_modules/cookie/package.json
- create mode 100644 node_modules/debug/.coveralls.yml
- create mode 100644 node_modules/debug/.eslintrc
- create mode 100644 node_modules/debug/.npmignore
- create mode 100644 node_modules/debug/.travis.yml
- create mode 100644 node_modules/debug/CHANGELOG.md
- create mode 100644 node_modules/debug/LICENSE
- create mode 100644 node_modules/debug/Makefile
- create mode 100644 node_modules/debug/README.md
- create mode 100644 node_modules/debug/component.json
- create mode 100644 node_modules/debug/karma.conf.js
- create mode 100644 node_modules/debug/node.js
- create mode 100644 node_modules/debug/package.json
- create mode 100644 node_modules/debug/src/browser.js
- create mode 100644 node_modules/debug/src/debug.js
- create mode 100644 node_modules/debug/src/index.js
- create mode 100644 node_modules/debug/src/inspector-log.js
- create mode 100644 node_modules/debug/src/node.js
- create mode 100644 node_modules/depd/History.md
- create mode 100644 node_modules/depd/LICENSE
- create mode 100644 node_modules/depd/Readme.md
- create mode 100644 node_modules/depd/index.js
- create mode 100644 node_modules/depd/lib/browser/index.js
- create mode 100644 node_modules/depd/package.json
- create mode 100644 node_modules/destroy/LICENSE
- create mode 100644 node_modules/destroy/README.md
- create mode 100644 node_modules/destroy/index.js
- create mode 100644 node_modules/destroy/package.json
- create mode 100644 node_modules/ee-first/LICENSE
- create mode 100644 node_modules/ee-first/README.md
- create mode 100644 node_modules/ee-first/index.js
- create mode 100644 node_modules/ee-first/package.json
- create mode 100644 node_modules/encodeurl/HISTORY.md
- create mode 100644 node_modules/encodeurl/LICENSE
- create mode 100644 node_modules/encodeurl/README.md
- create mode 100644 node_modules/encodeurl/index.js
- create mode 100644 node_modules/encodeurl/package.json
- create mode 100644 node_modules/escape-html/LICENSE
- create mode 100644 node_modules/escape-html/Readme.md
- create mode 100644 node_modules/escape-html/index.js
- create mode 100644 node_modules/escape-html/package.json
- create mode 100644 node_modules/etag/HISTORY.md
- create mode 100644 node_modules/etag/LICENSE
- create mode 100644 node_modules/etag/README.md
- create mode 100644 node_modules/etag/index.js
- create mode 100644 node_modules/etag/package.json
- create mode 100644 node_modules/express/History.md
- create mode 100644 node_modules/express/LICENSE
- create mode 100644 node_modules/express/Readme.md
- create mode 100644 node_modules/express/index.js
- create mode 100644 node_modules/express/lib/application.js
- create mode 100644 node_modules/express/lib/express.js
- create mode 100644 node_modules/express/lib/middleware/init.js
- create mode 100644 node_modules/express/lib/middleware/query.js
- create mode 100644 node_modules/express/lib/request.js
- create mode 100644 node_modules/express/lib/response.js
- create mode 100644 node_modules/express/lib/router/index.js
- create mode 100644 node_modules/express/lib/router/layer.js
- create mode 100644 node_modules/express/lib/router/route.js
- create mode 100644 node_modules/express/lib/utils.js
- create mode 100644 node_modules/express/lib/view.js
- create mode 100644 node_modules/express/package.json
- create mode 100644 node_modules/finalhandler/HISTORY.md
- create mode 100644 node_modules/finalhandler/LICENSE
- create mode 100644 node_modules/finalhandler/README.md
- create mode 100644 node_modules/finalhandler/SECURITY.md
- create mode 100644 node_modules/finalhandler/index.js
- create mode 100644 node_modules/finalhandler/package.json
- create mode 100644 node_modules/forwarded/HISTORY.md
- create mode 100644 node_modules/forwarded/LICENSE
- create mode 100644 node_modules/forwarded/README.md
- create mode 100644 node_modules/forwarded/index.js
- create mode 100644 node_modules/forwarded/package.json
- create mode 100644 node_modules/fresh/HISTORY.md
- create mode 100644 node_modules/fresh/LICENSE
- create mode 100644 node_modules/fresh/README.md
- create mode 100644 node_modules/fresh/index.js
- create mode 100644 node_modules/fresh/package.json
- create mode 100644 node_modules/function-bind/.editorconfig
- create mode 100644 node_modules/function-bind/.eslintrc
- create mode 100644 node_modules/function-bind/.jscs.json
- create mode 100644 node_modules/function-bind/.npmignore
- create mode 100644 node_modules/function-bind/.travis.yml
- create mode 100644 node_modules/function-bind/LICENSE
- create mode 100644 node_modules/function-bind/README.md
- create mode 100644 node_modules/function-bind/implementation.js
- create mode 100644 node_modules/function-bind/index.js
- create mode 100644 node_modules/function-bind/package.json
- create mode 100644 node_modules/function-bind/test/.eslintrc
- create mode 100644 node_modules/function-bind/test/index.js
- create mode 100644 node_modules/get-intrinsic/.eslintignore
- create mode 100644 node_modules/get-intrinsic/.eslintrc
- create mode 100644 node_modules/get-intrinsic/.github/FUNDING.yml
- create mode 100644 node_modules/get-intrinsic/.nycrc
- create mode 100644 node_modules/get-intrinsic/CHANGELOG.md
- create mode 100644 node_modules/get-intrinsic/LICENSE
- create mode 100644 node_modules/get-intrinsic/README.md
- create mode 100644 node_modules/get-intrinsic/index.js
- create mode 100644 node_modules/get-intrinsic/package.json
- create mode 100644 node_modules/get-intrinsic/test/GetIntrinsic.js
- create mode 100644 node_modules/has-symbols/.eslintrc
- create mode 100644 node_modules/has-symbols/.github/FUNDING.yml
- create mode 100644 node_modules/has-symbols/.nycrc
- create mode 100644 node_modules/has-symbols/CHANGELOG.md
- create mode 100644 node_modules/has-symbols/LICENSE
- create mode 100644 node_modules/has-symbols/README.md
- create mode 100644 node_modules/has-symbols/index.js
- create mode 100644 node_modules/has-symbols/package.json
- create mode 100644 node_modules/has-symbols/shams.js
- create mode 100644 node_modules/has-symbols/test/index.js
- create mode 100644 node_modules/has-symbols/test/shams/core-js.js
- create mode 100644 node_modules/has-symbols/test/shams/get-own-property-symbols.js
- create mode 100644 node_modules/has-symbols/test/tests.js
- create mode 100644 node_modules/has/LICENSE-MIT
- create mode 100644 node_modules/has/README.md
- create mode 100644 node_modules/has/package.json
- create mode 100644 node_modules/has/src/index.js
- create mode 100644 node_modules/has/test/index.js
- create mode 100644 node_modules/http-errors/HISTORY.md
- create mode 100644 node_modules/http-errors/LICENSE
- create mode 100644 node_modules/http-errors/README.md
- create mode 100644 node_modules/http-errors/index.js
- create mode 100644 node_modules/http-errors/package.json
- create mode 100644 node_modules/iconv-lite/Changelog.md
- create mode 100644 node_modules/iconv-lite/LICENSE
- create mode 100644 node_modules/iconv-lite/README.md
- create mode 100644 node_modules/iconv-lite/encodings/dbcs-codec.js
- create mode 100644 node_modules/iconv-lite/encodings/dbcs-data.js
- create mode 100644 node_modules/iconv-lite/encodings/index.js
- create mode 100644 node_modules/iconv-lite/encodings/internal.js
- create mode 100644 node_modules/iconv-lite/encodings/sbcs-codec.js
- create mode 100644 node_modules/iconv-lite/encodings/sbcs-data-generated.js
- create mode 100644 node_modules/iconv-lite/encodings/sbcs-data.js
- create mode 100644 node_modules/iconv-lite/encodings/tables/big5-added.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/cp936.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/cp949.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/cp950.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/eucjp.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/gb18030-ranges.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/gbk-added.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/shiftjis.json
- create mode 100644 node_modules/iconv-lite/encodings/utf16.js
- create mode 100644 node_modules/iconv-lite/encodings/utf7.js
- create mode 100644 node_modules/iconv-lite/lib/bom-handling.js
- create mode 100644 node_modules/iconv-lite/lib/extend-node.js
- create mode 100644 node_modules/iconv-lite/lib/index.d.ts
- create mode 100644 node_modules/iconv-lite/lib/index.js
- create mode 100644 node_modules/iconv-lite/lib/streams.js
- create mode 100644 node_modules/iconv-lite/package.json
- create mode 100644 node_modules/inherits/LICENSE
- create mode 100644 node_modules/inherits/README.md
- create mode 100644 node_modules/inherits/inherits.js
- create mode 100644 node_modules/inherits/inherits_browser.js
- create mode 100644 node_modules/inherits/package.json
- create mode 100644 node_modules/ipaddr.js/LICENSE
- create mode 100644 node_modules/ipaddr.js/README.md
- create mode 100644 node_modules/ipaddr.js/ipaddr.min.js
- create mode 100644 node_modules/ipaddr.js/lib/ipaddr.js
- create mode 100644 node_modules/ipaddr.js/lib/ipaddr.js.d.ts
- create mode 100644 node_modules/ipaddr.js/package.json
- create mode 100644 node_modules/media-typer/HISTORY.md
- create mode 100644 node_modules/media-typer/LICENSE
- create mode 100644 node_modules/media-typer/README.md
- create mode 100644 node_modules/media-typer/index.js
- create mode 100644 node_modules/media-typer/package.json
- create mode 100644 node_modules/merge-descriptors/HISTORY.md
- create mode 100644 node_modules/merge-descriptors/LICENSE
- create mode 100644 node_modules/merge-descriptors/README.md
- create mode 100644 node_modules/merge-descriptors/index.js
- create mode 100644 node_modules/merge-descriptors/package.json
- create mode 100644 node_modules/methods/HISTORY.md
- create mode 100644 node_modules/methods/LICENSE
- create mode 100644 node_modules/methods/README.md
- create mode 100644 node_modules/methods/index.js
- create mode 100644 node_modules/methods/package.json
- create mode 100644 node_modules/mime-db/HISTORY.md
- create mode 100644 node_modules/mime-db/LICENSE
- create mode 100644 node_modules/mime-db/README.md
- create mode 100644 node_modules/mime-db/db.json
- create mode 100644 node_modules/mime-db/index.js
- create mode 100644 node_modules/mime-db/package.json
- create mode 100644 node_modules/mime-types/HISTORY.md
- create mode 100644 node_modules/mime-types/LICENSE
- create mode 100644 node_modules/mime-types/README.md
- create mode 100644 node_modules/mime-types/index.js
- create mode 100644 node_modules/mime-types/package.json
- create mode 100644 node_modules/mime/.npmignore
- create mode 100644 node_modules/mime/CHANGELOG.md
- create mode 100644 node_modules/mime/LICENSE
- create mode 100644 node_modules/mime/README.md
- create mode 100755 node_modules/mime/cli.js
- create mode 100644 node_modules/mime/mime.js
- create mode 100644 node_modules/mime/package.json
- create mode 100755 node_modules/mime/src/build.js
- create mode 100644 node_modules/mime/src/test.js
- create mode 100644 node_modules/mime/types.json
- create mode 100644 node_modules/ms/index.js
- create mode 100644 node_modules/ms/license.md
- create mode 100644 node_modules/ms/package.json
- create mode 100644 node_modules/ms/readme.md
- create mode 100644 node_modules/negotiator/HISTORY.md
- create mode 100644 node_modules/negotiator/LICENSE
- create mode 100644 node_modules/negotiator/README.md
- create mode 100644 node_modules/negotiator/index.js
- create mode 100644 node_modules/negotiator/lib/charset.js
- create mode 100644 node_modules/negotiator/lib/encoding.js
- create mode 100644 node_modules/negotiator/lib/language.js
- create mode 100644 node_modules/negotiator/lib/mediaType.js
- create mode 100644 node_modules/negotiator/package.json
- create mode 100644 node_modules/nodeman/.npmignore
- create mode 100644 node_modules/nodeman/.travis.yml
- create mode 100644 node_modules/nodeman/Gruntfile.coffee
- create mode 100644 node_modules/nodeman/README.md
- create mode 100755 node_modules/nodeman/bin/_nodeman
- create mode 100755 node_modules/nodeman/bin/bot
- create mode 100755 node_modules/nodeman/bin/bot2
- create mode 100755 node_modules/nodeman/bin/nodeman
- create mode 100644 node_modules/nodeman/config.json
- create mode 100644 node_modules/nodeman/docs/JSONStream.md
- create mode 100644 node_modules/nodeman/docs/JSONStream.meta.js
- create mode 100644 node_modules/nodeman/docs/addons.md
- create mode 100644 node_modules/nodeman/docs/addons.meta.js
- create mode 100644 node_modules/nodeman/docs/ansi-color.md
- create mode 100644 node_modules/nodeman/docs/ansi-color.meta.js
- create mode 100644 node_modules/nodeman/docs/assert.md
- create mode 100644 node_modules/nodeman/docs/assert.meta.js
- create mode 100644 node_modules/nodeman/docs/async.md
- create mode 100644 node_modules/nodeman/docs/async.meta.js
- create mode 100644 node_modules/nodeman/docs/base64.md
- create mode 100644 node_modules/nodeman/docs/base64.meta.js
- create mode 100644 node_modules/nodeman/docs/bcrypt.md
- create mode 100644 node_modules/nodeman/docs/bcrypt.meta.js
- create mode 100644 node_modules/nodeman/docs/bower.md
- create mode 100644 node_modules/nodeman/docs/bower.meta.js
- create mode 100644 node_modules/nodeman/docs/buffer.md
- create mode 100644 node_modules/nodeman/docs/buffer.meta.js
- create mode 100644 node_modules/nodeman/docs/bufferjs.md
- create mode 100644 node_modules/nodeman/docs/bufferjs.meta.js
- create mode 100644 node_modules/nodeman/docs/buffertools.md
- create mode 100644 node_modules/nodeman/docs/buffertools.meta.js
- create mode 100644 node_modules/nodeman/docs/byline.md
- create mode 100644 node_modules/nodeman/docs/byline.meta.js
- create mode 100644 node_modules/nodeman/docs/cheerio.md
- create mode 100644 node_modules/nodeman/docs/cheerio.meta.js
- create mode 100644 node_modules/nodeman/docs/child_process.md
- create mode 100644 node_modules/nodeman/docs/child_process.meta.js
- create mode 100644 node_modules/nodeman/docs/cli.md
- create mode 100644 node_modules/nodeman/docs/cli.meta.js
- create mode 100644 node_modules/nodeman/docs/cluster.md
- create mode 100644 node_modules/nodeman/docs/cluster.meta.js
- create mode 100644 node_modules/nodeman/docs/coffee-script.md
- create mode 100644 node_modules/nodeman/docs/coffee-script.meta.js
- create mode 100644 node_modules/nodeman/docs/colors.md
- create mode 100644 node_modules/nodeman/docs/colors.meta.js
- create mode 100644 node_modules/nodeman/docs/commander.md
- create mode 100644 node_modules/nodeman/docs/commander.meta.js
- create mode 100644 node_modules/nodeman/docs/connect.md
- create mode 100644 node_modules/nodeman/docs/connect.meta.js
- create mode 100644 node_modules/nodeman/docs/consolidate.md
- create mode 100644 node_modules/nodeman/docs/consolidate.meta.js
- create mode 100644 node_modules/nodeman/docs/cradle.md
- create mode 100644 node_modules/nodeman/docs/cradle.meta.js
- create mode 100644 node_modules/nodeman/docs/cron.md
- create mode 100644 node_modules/nodeman/docs/cron.meta.js
- create mode 100644 node_modules/nodeman/docs/crypto.md
- create mode 100644 node_modules/nodeman/docs/crypto.meta.js
- create mode 100644 node_modules/nodeman/docs/custom.js
- create mode 100644 node_modules/nodeman/docs/dateformat.md
- create mode 100644 node_modules/nodeman/docs/dateformat.meta.js
- create mode 100644 node_modules/nodeman/docs/debug.md
- create mode 100644 node_modules/nodeman/docs/debug.meta.js
- create mode 100644 node_modules/nodeman/docs/debugger.md
- create mode 100644 node_modules/nodeman/docs/debugger.meta.js
- create mode 100644 node_modules/nodeman/docs/dgram.md
- create mode 100644 node_modules/nodeman/docs/dgram.meta.js
- create mode 100644 node_modules/nodeman/docs/diff.md
- create mode 100644 node_modules/nodeman/docs/diff.meta.js
- create mode 100644 node_modules/nodeman/docs/dns.md
- create mode 100644 node_modules/nodeman/docs/dns.meta.js
- create mode 100644 node_modules/nodeman/docs/domain.md
- create mode 100644 node_modules/nodeman/docs/domain.meta.js
- create mode 100644 node_modules/nodeman/docs/eco.md
- create mode 100644 node_modules/nodeman/docs/eco.meta.js
- create mode 100644 node_modules/nodeman/docs/ejs.js
- create mode 100644 node_modules/nodeman/docs/ejs.md
- create mode 100644 node_modules/nodeman/docs/ejs.meta.js
- create mode 100644 node_modules/nodeman/docs/emailjs.js
- create mode 100644 node_modules/nodeman/docs/emailjs.md
- create mode 100644 node_modules/nodeman/docs/emailjs.meta.js
- create mode 100644 node_modules/nodeman/docs/event-stream.md
- create mode 100644 node_modules/nodeman/docs/event-stream.meta.js
- create mode 100644 node_modules/nodeman/docs/eventemitter2.md
- create mode 100644 node_modules/nodeman/docs/eventemitter2.meta.js
- create mode 100644 node_modules/nodeman/docs/events.md
- create mode 100644 node_modules/nodeman/docs/events.meta.js
- create mode 100644 node_modules/nodeman/docs/express.md
- create mode 100644 node_modules/nodeman/docs/express.meta.js
- create mode 100644 node_modules/nodeman/docs/fibers.md
- create mode 100644 node_modules/nodeman/docs/fibers.meta.js
- create mode 100644 node_modules/nodeman/docs/fibrous.js
- create mode 100644 node_modules/nodeman/docs/file.md
- create mode 100644 node_modules/nodeman/docs/file.meta.js
- create mode 100644 node_modules/nodeman/docs/filed.md
- create mode 100644 node_modules/nodeman/docs/filed.meta.js
- create mode 100644 node_modules/nodeman/docs/fileutils.js
- create mode 100644 node_modules/nodeman/docs/findit.md
- create mode 100644 node_modules/nodeman/docs/findit.meta.js
- create mode 100644 node_modules/nodeman/docs/forever.md
- create mode 100644 node_modules/nodeman/docs/forever.meta.js
- create mode 100644 node_modules/nodeman/docs/formidable.md
- create mode 100644 node_modules/nodeman/docs/formidable.meta.js
- create mode 100644 node_modules/nodeman/docs/fs-extra.md
- create mode 100644 node_modules/nodeman/docs/fs-extra.meta.js
- create mode 100644 node_modules/nodeman/docs/fs.md
- create mode 100644 node_modules/nodeman/docs/fs.meta.js
- create mode 100644 node_modules/nodeman/docs/glob.md
- create mode 100644 node_modules/nodeman/docs/glob.meta.js
- create mode 100644 node_modules/nodeman/docs/globals.md
- create mode 100644 node_modules/nodeman/docs/globals.meta.js
- create mode 100644 node_modules/nodeman/docs/googleanalytics.md
- create mode 100644 node_modules/nodeman/docs/googleanalytics.meta.js
- create mode 100644 node_modules/nodeman/docs/graceful-fs.js
- create mode 100644 node_modules/nodeman/docs/handlebars.md
- create mode 100644 node_modules/nodeman/docs/handlebars.meta.js
- create mode 100644 node_modules/nodeman/docs/hashish.md
- create mode 100644 node_modules/nodeman/docs/hashish.meta.js
- create mode 100644 node_modules/nodeman/docs/hljs.md
- create mode 100644 node_modules/nodeman/docs/hljs.meta.js
- create mode 100644 node_modules/nodeman/docs/http-proxy.md
- create mode 100644 node_modules/nodeman/docs/http-proxy.meta.js
- create mode 100644 node_modules/nodeman/docs/http.md
- create mode 100644 node_modules/nodeman/docs/http.meta.js
- create mode 100644 node_modules/nodeman/docs/https.md
- create mode 100644 node_modules/nodeman/docs/https.meta.js
- create mode 100644 node_modules/nodeman/docs/i18n.md
- create mode 100644 node_modules/nodeman/docs/i18n.meta.js
- create mode 100644 node_modules/nodeman/docs/iconv.md
- create mode 100644 node_modules/nodeman/docs/iconv.meta.js
- create mode 100644 node_modules/nodeman/docs/imagemagick.md
- create mode 100644 node_modules/nodeman/docs/imagemagick.meta.js
- create mode 100644 node_modules/nodeman/docs/jade.md
- create mode 100644 node_modules/nodeman/docs/jade.meta.js
- create mode 100644 node_modules/nodeman/docs/js-yaml.md
- create mode 100644 node_modules/nodeman/docs/js-yaml.meta.js
- create mode 100644 node_modules/nodeman/docs/jsdom.md
- create mode 100644 node_modules/nodeman/docs/jsdom.meta.js
- create mode 100644 node_modules/nodeman/docs/jshashes.md
- create mode 100644 node_modules/nodeman/docs/jshashes.meta.js
- create mode 100644 node_modules/nodeman/docs/knox.md
- create mode 100644 node_modules/nodeman/docs/knox.meta.js
- create mode 100644 node_modules/nodeman/docs/lazy.md
- create mode 100644 node_modules/nodeman/docs/lazy.meta.js
- create mode 100644 node_modules/nodeman/docs/markdown.md
- create mode 100644 node_modules/nodeman/docs/markdown.meta.js
- create mode 100644 node_modules/nodeman/docs/marked.md
- create mode 100644 node_modules/nodeman/docs/marked.meta.js
- create mode 100644 node_modules/nodeman/docs/mime.md
- create mode 100644 node_modules/nodeman/docs/mime.meta.js
- create mode 100644 node_modules/nodeman/docs/minimatch.md
- create mode 100644 node_modules/nodeman/docs/minimatch.meta.js
- create mode 100644 node_modules/nodeman/docs/mkdirp.md
- create mode 100644 node_modules/nodeman/docs/mkdirp.meta.js
- create mode 100644 node_modules/nodeman/docs/mocha.md
- create mode 100644 node_modules/nodeman/docs/mocha.meta.js
- create mode 100644 node_modules/nodeman/docs/modules.md
- create mode 100644 node_modules/nodeman/docs/modules.meta.js
- create mode 100644 node_modules/nodeman/docs/moment.md
- create mode 100644 node_modules/nodeman/docs/moment.meta.js
- create mode 100644 node_modules/nodeman/docs/mongodb.md
- create mode 100644 node_modules/nodeman/docs/mongodb.meta.js
- create mode 100644 node_modules/nodeman/docs/mongoose.md
- create mode 100644 node_modules/nodeman/docs/mongoose.meta.js
- create mode 100644 node_modules/nodeman/docs/mongoskin.md
- create mode 100644 node_modules/nodeman/docs/mongoskin.meta.js
- create mode 100644 node_modules/nodeman/docs/mu2.md
- create mode 100644 node_modules/nodeman/docs/mu2.meta.js
- create mode 100644 node_modules/nodeman/docs/mysql.md
- create mode 100644 node_modules/nodeman/docs/mysql.meta.js
- create mode 100644 node_modules/nodeman/docs/net.md
- create mode 100644 node_modules/nodeman/docs/net.meta.js
- create mode 100644 node_modules/nodeman/docs/node-expat.md
- create mode 100644 node_modules/nodeman/docs/node-expat.meta.js
- create mode 100644 node_modules/nodeman/docs/node-uuid.md
- create mode 100644 node_modules/nodeman/docs/node-uuid.meta.js
- create mode 100644 node_modules/nodeman/docs/nodemailer.md
- create mode 100644 node_modules/nodeman/docs/nodemailer.meta.js
- create mode 100644 node_modules/nodeman/docs/nopt.md
- create mode 100644 node_modules/nodeman/docs/nopt.meta.js
- create mode 100644 node_modules/nodeman/docs/optimist.md
- create mode 100644 node_modules/nodeman/docs/optimist.meta.js
- create mode 100644 node_modules/nodeman/docs/os.md
- create mode 100644 node_modules/nodeman/docs/os.meta.js
- create mode 100644 node_modules/nodeman/docs/passport-facebook.md
- create mode 100644 node_modules/nodeman/docs/passport-facebook.meta.js
- create mode 100644 node_modules/nodeman/docs/passport-google-oauth.md
- create mode 100644 node_modules/nodeman/docs/passport-google-oauth.meta.js
- create mode 100644 node_modules/nodeman/docs/passport-twitter.md
- create mode 100644 node_modules/nodeman/docs/passport-twitter.meta.js
- create mode 100644 node_modules/nodeman/docs/path.md
- create mode 100644 node_modules/nodeman/docs/path.meta.js
- create mode 100644 node_modules/nodeman/docs/pg.md
- create mode 100644 node_modules/nodeman/docs/pg.meta.js
- create mode 100644 node_modules/nodeman/docs/pkginfo.md
- create mode 100644 node_modules/nodeman/docs/pkginfo.meta.js
- create mode 100644 node_modules/nodeman/docs/process.md
- create mode 100644 node_modules/nodeman/docs/process.meta.js
- create mode 100644 node_modules/nodeman/docs/prompt.md
- create mode 100644 node_modules/nodeman/docs/prompt.meta.js
- create mode 100644 node_modules/nodeman/docs/punycode.md
- create mode 100644 node_modules/nodeman/docs/punycode.meta.js
- create mode 100644 node_modules/nodeman/docs/q.md
- create mode 100644 node_modules/nodeman/docs/q.meta.js
- create mode 100644 node_modules/nodeman/docs/qs.md
- create mode 100644 node_modules/nodeman/docs/qs.meta.js
- create mode 100644 node_modules/nodeman/docs/querystring.md
- create mode 100644 node_modules/nodeman/docs/querystring.meta.js
- create mode 100644 node_modules/nodeman/docs/readline.md
- create mode 100644 node_modules/nodeman/docs/readline.meta.js
- create mode 100644 node_modules/nodeman/docs/redis.md
- create mode 100644 node_modules/nodeman/docs/redis.meta.js
- create mode 100644 node_modules/nodeman/docs/repl.md
- create mode 100644 node_modules/nodeman/docs/repl.meta.js
- create mode 100644 node_modules/nodeman/docs/request.md
- create mode 100644 node_modules/nodeman/docs/request.meta.js
- create mode 100644 node_modules/nodeman/docs/restify.md
- create mode 100644 node_modules/nodeman/docs/restify.meta.js
- create mode 100644 node_modules/nodeman/docs/restler.md
- create mode 100644 node_modules/nodeman/docs/restler.meta.js
- create mode 100644 node_modules/nodeman/docs/rimraf.md
- create mode 100644 node_modules/nodeman/docs/rimraf.meta.js
- create mode 100644 node_modules/nodeman/docs/sax.md
- create mode 100644 node_modules/nodeman/docs/sax.meta.js
- create mode 100644 node_modules/nodeman/docs/semver.md
- create mode 100644 node_modules/nodeman/docs/semver.meta.js
- create mode 100644 node_modules/nodeman/docs/should.md
- create mode 100644 node_modules/nodeman/docs/should.meta.js
- create mode 100644 node_modules/nodeman/docs/socket.io.md
- create mode 100644 node_modules/nodeman/docs/socket.io.meta.js
- create mode 100644 node_modules/nodeman/docs/sprintf.md
- create mode 100644 node_modules/nodeman/docs/sprintf.meta.js
- create mode 100644 node_modules/nodeman/docs/sqlite3.md
- create mode 100644 node_modules/nodeman/docs/sqlite3.meta.js
- create mode 100644 node_modules/nodeman/docs/stdio.md
- create mode 100644 node_modules/nodeman/docs/stdio.meta.js
- create mode 100644 node_modules/nodeman/docs/step.md
- create mode 100644 node_modules/nodeman/docs/step.meta.js
- create mode 100644 node_modules/nodeman/docs/stream.md
- create mode 100644 node_modules/nodeman/docs/stream.meta.js
- create mode 100644 node_modules/nodeman/docs/string_decoder.md
- create mode 100644 node_modules/nodeman/docs/string_decoder.meta.js
- create mode 100644 node_modules/nodeman/docs/stylus.md
- create mode 100644 node_modules/nodeman/docs/stylus.meta.js
- create mode 100644 node_modules/nodeman/docs/tap.md
- create mode 100644 node_modules/nodeman/docs/tap.meta.js
- create mode 100644 node_modules/nodeman/docs/tar.md
- create mode 100644 node_modules/nodeman/docs/tar.meta.js
- create mode 100644 node_modules/nodeman/docs/temp.md
- create mode 100644 node_modules/nodeman/docs/temp.meta.js
- create mode 100644 node_modules/nodeman/docs/through.md
- create mode 100644 node_modules/nodeman/docs/through.meta.js
- create mode 100644 node_modules/nodeman/docs/timers.md
- create mode 100644 node_modules/nodeman/docs/timers.meta.js
- create mode 100644 node_modules/nodeman/docs/tls.md
- create mode 100644 node_modules/nodeman/docs/tls.meta.js
- create mode 100644 node_modules/nodeman/docs/traverse.md
- create mode 100644 node_modules/nodeman/docs/traverse.meta.js
- create mode 100644 node_modules/nodeman/docs/tty.md
- create mode 100644 node_modules/nodeman/docs/tty.meta.js
- create mode 100644 node_modules/nodeman/docs/uglify-js.md
- create mode 100644 node_modules/nodeman/docs/uglify-js.meta.js
- create mode 100644 node_modules/nodeman/docs/underscore.md
- create mode 100644 node_modules/nodeman/docs/underscore.meta.js
- create mode 100644 node_modules/nodeman/docs/url.md
- create mode 100644 node_modules/nodeman/docs/url.meta.js
- create mode 100644 node_modules/nodeman/docs/util.md
- create mode 100644 node_modules/nodeman/docs/util.meta.js
- create mode 100644 node_modules/nodeman/docs/vm.md
- create mode 100644 node_modules/nodeman/docs/vm.meta.js
- create mode 100644 node_modules/nodeman/docs/vows.md
- create mode 100644 node_modules/nodeman/docs/vows.meta.js
- create mode 100644 node_modules/nodeman/docs/walkdir.md
- create mode 100644 node_modules/nodeman/docs/walkdir.meta.js
- create mode 100644 node_modules/nodeman/docs/websocket.md
- create mode 100644 node_modules/nodeman/docs/websocket.meta.js
- create mode 100644 node_modules/nodeman/docs/winston.md
- create mode 100644 node_modules/nodeman/docs/winston.meta.js
- create mode 100644 node_modules/nodeman/docs/wordwrap.md
- create mode 100644 node_modules/nodeman/docs/wordwrap.meta.js
- create mode 100644 node_modules/nodeman/docs/wrench.md
- create mode 100644 node_modules/nodeman/docs/wrench.meta.js
- create mode 100644 node_modules/nodeman/docs/xml2js.md
- create mode 100644 node_modules/nodeman/docs/xml2js.meta.js
- create mode 100644 node_modules/nodeman/docs/zlib.md
- create mode 100644 node_modules/nodeman/docs/zlib.meta.js
- create mode 100644 node_modules/nodeman/docs/zombie.md
- create mode 100644 node_modules/nodeman/docs/zombie.meta.js
- create mode 100644 node_modules/nodeman/index.js
- create mode 100644 node_modules/nodeman/lib/extensions/github.js
- create mode 100644 node_modules/nodeman/lib/extensions/prettify.js
- create mode 100644 node_modules/nodeman/lib/extensions/table.js
- create mode 100644 node_modules/nodeman/lib/extensions/twitter.js
- create mode 100644 node_modules/nodeman/lib/mustache.js
- create mode 100644 node_modules/nodeman/lib/nodeman.js
- create mode 100644 node_modules/nodeman/lib/showdown.js
- create mode 100644 node_modules/nodeman/package.json
- create mode 100644 node_modules/object-inspect/.eslintrc
- create mode 100644 node_modules/object-inspect/.github/FUNDING.yml
- create mode 100644 node_modules/object-inspect/.nycrc
- create mode 100644 node_modules/object-inspect/CHANGELOG.md
- create mode 100644 node_modules/object-inspect/LICENSE
- create mode 100644 node_modules/object-inspect/example/all.js
- create mode 100644 node_modules/object-inspect/example/circular.js
- create mode 100644 node_modules/object-inspect/example/fn.js
- create mode 100644 node_modules/object-inspect/example/inspect.js
- create mode 100644 node_modules/object-inspect/index.js
- create mode 100644 node_modules/object-inspect/package-support.json
- create mode 100644 node_modules/object-inspect/package.json
- create mode 100644 node_modules/object-inspect/readme.markdown
- create mode 100644 node_modules/object-inspect/test-core-js.js
- create mode 100644 node_modules/object-inspect/test/bigint.js
- create mode 100644 node_modules/object-inspect/test/browser/dom.js
- create mode 100644 node_modules/object-inspect/test/circular.js
- create mode 100644 node_modules/object-inspect/test/deep.js
- create mode 100644 node_modules/object-inspect/test/element.js
- create mode 100644 node_modules/object-inspect/test/err.js
- create mode 100644 node_modules/object-inspect/test/fakes.js
- create mode 100644 node_modules/object-inspect/test/fn.js
- create mode 100644 node_modules/object-inspect/test/has.js
- create mode 100644 node_modules/object-inspect/test/holes.js
- create mode 100644 node_modules/object-inspect/test/indent-option.js
- create mode 100644 node_modules/object-inspect/test/inspect.js
- create mode 100644 node_modules/object-inspect/test/lowbyte.js
- create mode 100644 node_modules/object-inspect/test/number.js
- create mode 100644 node_modules/object-inspect/test/quoteStyle.js
- create mode 100644 node_modules/object-inspect/test/toStringTag.js
- create mode 100644 node_modules/object-inspect/test/undef.js
- create mode 100644 node_modules/object-inspect/test/values.js
- create mode 100644 node_modules/object-inspect/util.inspect.js
- create mode 100644 node_modules/on-finished/HISTORY.md
- create mode 100644 node_modules/on-finished/LICENSE
- create mode 100644 node_modules/on-finished/README.md
- create mode 100644 node_modules/on-finished/index.js
- create mode 100644 node_modules/on-finished/package.json
- create mode 100644 node_modules/parseurl/HISTORY.md
- create mode 100644 node_modules/parseurl/LICENSE
- create mode 100644 node_modules/parseurl/README.md
- create mode 100644 node_modules/parseurl/index.js
- create mode 100644 node_modules/parseurl/package.json
- create mode 100644 node_modules/path-to-regexp/History.md
- create mode 100644 node_modules/path-to-regexp/LICENSE
- create mode 100644 node_modules/path-to-regexp/Readme.md
- create mode 100644 node_modules/path-to-regexp/index.js
- create mode 100644 node_modules/path-to-regexp/package.json
- create mode 100644 node_modules/proxy-addr/HISTORY.md
- create mode 100644 node_modules/proxy-addr/LICENSE
- create mode 100644 node_modules/proxy-addr/README.md
- create mode 100644 node_modules/proxy-addr/index.js
- create mode 100644 node_modules/proxy-addr/package.json
- create mode 100644 node_modules/qs/.editorconfig
- create mode 100644 node_modules/qs/.eslintrc
- create mode 100644 node_modules/qs/.github/FUNDING.yml
- create mode 100644 node_modules/qs/.nycrc
- create mode 100644 node_modules/qs/CHANGELOG.md
- create mode 100644 node_modules/qs/LICENSE.md
- create mode 100644 node_modules/qs/README.md
- create mode 100644 node_modules/qs/dist/qs.js
- create mode 100644 node_modules/qs/lib/formats.js
- create mode 100644 node_modules/qs/lib/index.js
- create mode 100644 node_modules/qs/lib/parse.js
- create mode 100644 node_modules/qs/lib/stringify.js
- create mode 100644 node_modules/qs/lib/utils.js
- create mode 100644 node_modules/qs/package.json
- create mode 100644 node_modules/qs/test/parse.js
- create mode 100644 node_modules/qs/test/stringify.js
- create mode 100644 node_modules/qs/test/utils.js
- create mode 100644 node_modules/range-parser/HISTORY.md
- create mode 100644 node_modules/range-parser/LICENSE
- create mode 100644 node_modules/range-parser/README.md
- create mode 100644 node_modules/range-parser/index.js
- create mode 100644 node_modules/range-parser/package.json
- create mode 100644 node_modules/raw-body/HISTORY.md
- create mode 100644 node_modules/raw-body/LICENSE
- create mode 100644 node_modules/raw-body/README.md
- create mode 100644 node_modules/raw-body/SECURITY.md
- create mode 100644 node_modules/raw-body/index.d.ts
- create mode 100644 node_modules/raw-body/index.js
- create mode 100644 node_modules/raw-body/package.json
- create mode 100644 node_modules/safe-buffer/LICENSE
- create mode 100644 node_modules/safe-buffer/README.md
- create mode 100644 node_modules/safe-buffer/index.d.ts
- create mode 100644 node_modules/safe-buffer/index.js
- create mode 100644 node_modules/safe-buffer/package.json
- create mode 100644 node_modules/safer-buffer/LICENSE
- create mode 100644 node_modules/safer-buffer/Porting-Buffer.md
- create mode 100644 node_modules/safer-buffer/Readme.md
- create mode 100644 node_modules/safer-buffer/dangerous.js
- create mode 100644 node_modules/safer-buffer/package.json
- create mode 100644 node_modules/safer-buffer/safer.js
- create mode 100644 node_modules/safer-buffer/tests.js
- create mode 100644 node_modules/send/HISTORY.md
- create mode 100644 node_modules/send/LICENSE
- create mode 100644 node_modules/send/README.md
- create mode 100644 node_modules/send/SECURITY.md
- create mode 100644 node_modules/send/index.js
- create mode 120000 node_modules/send/node_modules/.bin/mime
- create mode 100644 node_modules/send/node_modules/ms/index.js
- create mode 100644 node_modules/send/node_modules/ms/license.md
- create mode 100644 node_modules/send/node_modules/ms/package.json
- create mode 100644 node_modules/send/node_modules/ms/readme.md
- create mode 100644 node_modules/send/package.json
- create mode 100644 node_modules/serve-static/HISTORY.md
- create mode 100644 node_modules/serve-static/LICENSE
- create mode 100644 node_modules/serve-static/README.md
- create mode 100644 node_modules/serve-static/index.js
- create mode 100644 node_modules/serve-static/package.json
- create mode 100644 node_modules/setprototypeof/LICENSE
- create mode 100644 node_modules/setprototypeof/README.md
- create mode 100644 node_modules/setprototypeof/index.d.ts
- create mode 100644 node_modules/setprototypeof/index.js
- create mode 100644 node_modules/setprototypeof/package.json
- create mode 100644 node_modules/setprototypeof/test/index.js
- create mode 100644 node_modules/side-channel/.eslintignore
- create mode 100644 node_modules/side-channel/.eslintrc
- create mode 100644 node_modules/side-channel/.github/FUNDING.yml
- create mode 100644 node_modules/side-channel/.nycrc
- create mode 100644 node_modules/side-channel/CHANGELOG.md
- create mode 100644 node_modules/side-channel/LICENSE
- create mode 100644 node_modules/side-channel/README.md
- create mode 100644 node_modules/side-channel/index.js
- create mode 100644 node_modules/side-channel/package.json
- create mode 100644 node_modules/side-channel/test/index.js
- create mode 100644 node_modules/statuses/HISTORY.md
- create mode 100644 node_modules/statuses/LICENSE
- create mode 100644 node_modules/statuses/README.md
- create mode 100644 node_modules/statuses/codes.json
- create mode 100644 node_modules/statuses/index.js
- create mode 100644 node_modules/statuses/package.json
- create mode 100644 node_modules/toidentifier/HISTORY.md
- create mode 100644 node_modules/toidentifier/LICENSE
- create mode 100644 node_modules/toidentifier/README.md
- create mode 100644 node_modules/toidentifier/index.js
- create mode 100644 node_modules/toidentifier/package.json
- create mode 100644 node_modules/type-is/HISTORY.md
- create mode 100644 node_modules/type-is/LICENSE
- create mode 100644 node_modules/type-is/README.md
- create mode 100644 node_modules/type-is/index.js
- create mode 100644 node_modules/type-is/package.json
- create mode 100644 node_modules/unpipe/HISTORY.md
- create mode 100644 node_modules/unpipe/LICENSE
- create mode 100644 node_modules/unpipe/README.md
- create mode 100644 node_modules/unpipe/index.js
- create mode 100644 node_modules/unpipe/package.json
- create mode 100644 node_modules/utils-merge/.npmignore
- create mode 100644 node_modules/utils-merge/LICENSE
- create mode 100644 node_modules/utils-merge/README.md
- create mode 100644 node_modules/utils-merge/index.js
- create mode 100644 node_modules/utils-merge/package.json
- create mode 100644 node_modules/vary/HISTORY.md
- create mode 100644 node_modules/vary/LICENSE
- create mode 100644 node_modules/vary/README.md
- create mode 100644 node_modules/vary/index.js
- create mode 100644 node_modules/vary/package.json
- create mode 100644 package.json
- create mode 100644 src/index.js
- create mode 100644 yarn.lock
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit commit -m"First commit"[39m[26D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39m[4mp[24m[90mu[90ml[90ml[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [22D[24mp[39mu[39ms[90mh[90m --set-upstream origin fix/rate-webhook[39m[40D[39mh[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39D[?1l>[?2004l
-]2;git push]1;gitfatal: No configured push destination.
-Either specify the URL from the command-line or configure a remote repository using
-
-    git remote add <name> <url>
-
-and then push using the remote name
-
-    git push <name>
-
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;31m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit push[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39mr[90me[90ms[90mt[90more --staged users_api/app/models/users.py[39m[45D[39me[39mm[90mo[90mt[90me[90m [90ma[90md[90md[90m [90mo[90mr[90mi[90mg[90mi[90mn[90m [90mg[90mi[90mt[90m@[90mg[90mi[90mt[90mh[90mu[90mb[90m.[90mc[90mo[90mm[90m:[90mE[90m-[90mP[90me[90mc[90ma[90m/[90mb[90m2[90mc[90m-[90mf[90mo[90mrma-pagamento-yapay.git[39m[66D[39mo[39mt[39me[39m [39m[4ma[24m[24ma[39md[39md[39m [39mo[39mr[39mi[39mg[39mi[39mn[39m [22D[32mg[39m[39m [39m                    [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [72D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[1m[31mg[1m[31mi[1m[31mt[1m[31m@[0m[39m[1m[31m@[1m[31mg[0m[39m[1m[31mg[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[1m[31mt[1m[31mh[0m[39m[1m[31mh[1m[31mu[0m[39m[1m[31mu[1m[31mb[0m[39m[1m[31mb[1m[31m.[0m[39m[1m[31m.[1m[31mc[0m[39m[1m[31mc[1m[31mo[0m[39m[1m[31mo[1m[31mm[0m[39m[1m[31mm[1m[31m:[0m[39m[1m[31m:[1m[31mg[0m[39m[1m[31mg[1m[31mu[0m[39m[1m[31mu[1m[31mi[0m[39m[1m[31mi[1m[31mm[0m[39m[1m[31mm[1m[31mi[0m[39m[1m[31mi[1m[31ml[0m[39m[1m[31ml[1m[31ml[0m[39m[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31mo[0m[39m[1m[31mo[1m[31m/[0m[39m[1m[31m/[1m[31mb[0m[39m[1m[31mb[1m[31ma[0m[39m[1m[31ma[1m[31ms[0m[39m[1m[31ms[1m[31mi[0m[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31m-[0m[39m[1m[31m-[1m[31me[0m[39m[1m[31me[1m[31mx[0m[39m[1m[31mx[1m[31mp[0m[39m[1m[31mp[1m[31mr[0m[39m[1m[31mr[1m[31me[0m[39m[1m[31me[1m[31ms[0m[39m[1m[31ms[1m[31ms[0m[39m[1m[31ms[1m[31m-[0m[39m[1m[31m-[1m[31mn[0m[39m[1m[31mn[1m[31mo[0m[39m[1m[31mo[1m[31md[0m[39m[1m[31md[1m[31me[0m[39m[1m[31me[1m[31m.[0m[39m[1m[31m.[1m[31mg[0m[39m[1m[31mg[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[44D[1m[31m [1m[31mr[1m[31me[1m[31mm[1m[31mo[1m[31mt[1m[31me[1m[31m [1m[31ma[1m[31md[1m[31md[1m[31m [1m[31mo[1m[31mr[1m[31mi[1m[31mg[1m[31mi[1m[31mn[1m[31m [1m[31mg[1m[31mi[1m[31mt[1m[31m@[1m[31mg[1m[31mi[1m[31mt[1m[31mh[1m[31mu[1m[31mb[1m[31m.[1m[31mc[1m[31mo[1m[31mm[1m[31m:[1m[31mg[1m[31mu[1m[31mi[1m[31mm[1m[31mi[1m[31ml[1m[31ml[1m[31me[1m[31mo[1m[31m/[1m[31mbasic-express-node.git[0m[27m[39m[69D[0m[32mg[0m[32mi[0m[32mt[39m[0m[39m [0m[39mr[0m[39me[0m[39mm[0m[39mo[0m[39mt[0m[39me[0m[39m [0m[39ma[0m[39md[0m[39md[0m[39m [0m[39mo[0m[39mr[0m[39mi[0m[39mg[0m[39mi[0m[39mn[0m[39m [0m[39mg[0m[39mi[0m[39mt[0m[39m@[0m[39mg[0m[39mi[0m[39mt[0m[39mh[0m[39mu[0m[39mb[0m[39m.[0m[39mc[0m[39mo[0m[39mm[0m[39m:[0m[39mg[0m[39mu[0m[39mi[0m[39mm[0m[39mi[0m[39ml[0m[39ml[0m[39me[0m[39mo[0m[39m/[0m[39mb[0m[39ma[0m[39ms[0m[39mi[0m[39mc[0m[39m-[0m[39me[0m[39mx[0m[39mp[0m[39mr[0m[39me[0m[39ms[0m[39ms[0m[39m-[0m[39mn[0m[39mo[0m[39md[0m[39me[0m[39m.[0m[39mg[0m[39mi[0m[39mt[90mgit@github.com:E-Peca/b2c-forma-pagamento-yapay.git[39m[51D[8D[16C[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [67D[?1l>[?2004l
-]2;git remote add origin git@github.com:guimilleo/basic-express-node.git]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit remote add origin git@github.com:guimilleo/basic-express-node.git[39m[68D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39m[4mp[24m[90mu[90ms[90mh[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [64D[24mp[39mu[39ms[39mh [90m--set-upstream origin fix/rate-webhook[39m[38D[39mo[90mr[90mi[90mg[90mi[90mn[90m [90mH[90mE[90mA[90mD[90m [90m-[90m-[90mf[2C[90mc[90me[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [37D[39mr[39mi[39mg[39mi[39mn[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[?1l>[?2004l
-]2;git push origin]1;gitfatal: The current branch master has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin master
-
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;31m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit push origin [39m[15D[1m[31mg[1m[31mt[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D [0m[32mg[39m[0m[90mi[90mt push origin [39m[15D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39m[4mp[24m[24mp[39mu[39ms[39mh[39m [39m-[90m-[90ms[90me[90mt[90m-[90mu[90mpstream origin fix/rate-webhook[39m[37D[39m-[39ms[39me[39mt[39m-[39mu[39mp[39ms[39mt[39mr[39me[39ma[39mm[39m [39mo[39mr[39mi[39mg[39mi[39mn[39m [39mf[39mi[39mx[39m/[39mr[39ma[39mt[39me[39m-[39mw[39me[39mb[39mh[39mo[39mo[39mk[90mk[39m[90mo[90mo[90mh[90mb[90me[90mw[90m-[90me[90mt[90ma[90mr[90m/[90mx[90mi[90mf[39m[39mm[90me[90mn[90mv[90mi[90mo[90m-[90my[90ma[90mp[90ma[90my[39m[39m [39m [39m [39m [15D[39ma[90ms[90mt[90me[90mr[39m[39m [39m [39m [39m [39m [39m [10D[39mi[39m [39m [39m n[?1l>[?2004l
-]2;git push --set-upstream origin main]1;giterror: src refspec main does not match any
-[31merror: failed to push some refs to 'git@github.com:guimilleo/basic-express-node.git'
-[m[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;31m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mgit[39m push --set-upstream origin main[90mn[39m[90mi[90ma[39m[39ma[39ms[90mt[90mer[39m[39mt[39me[39mr[?1l>[?2004l
-]2;git push --set-upstream origin master]1;gitEnumerating objects: 848, done.
-Counting objects:   0% (1/848)Counting objects:   1% (9/848)Counting objects:   2% (17/848)Counting objects:   3% (26/848)Counting objects:   4% (34/848)Counting objects:   5% (43/848)Counting objects:   6% (51/848)Counting objects:   7% (60/848)Counting objects:   8% (68/848)Counting objects:   9% (77/848)Counting objects:  10% (85/848)Counting objects:  11% (94/848)Counting objects:  12% (102/848)Counting objects:  13% (111/848)Counting objects:  14% (119/848)Counting objects:  15% (128/848)Counting objects:  16% (136/848)Counting objects:  17% (145/848)Counting objects:  18% (153/848)Counting objects:  19% (162/848)Counting objects:  20% (170/848)Counting objects:  21% (179/848)Counting objects:  22% (187/848)Counting objects:  23% (196/848)Counting objects:  24% (204/848)Counting objects:  25% (212/848)Counting objects:  26% (221/848)Counting objects:  27% (229/848)Counting objects:  28% (238/848)Counting objects:  29% (246/848)Counting objects:  30% (255/848)Counting objects:  31% (263/848)Counting objects:  32% (272/848)Counting objects:  33% (280/848)Counting objects:  34% (289/848)Counting objects:  35% (297/848)Counting objects:  36% (306/848)Counting objects:  37% (314/848)Counting objects:  38% (323/848)Counting objects:  39% (331/848)Counting objects:  40% (340/848)Counting objects:  41% (348/848)Counting objects:  42% (357/848)Counting objects:  43% (365/848)Counting objects:  44% (374/848)Counting objects:  45% (382/848)Counting objects:  46% (391/848)Counting objects:  47% (399/848)Counting objects:  48% (408/848)Counting objects:  49% (416/848)Counting objects:  50% (424/848)Counting objects:  51% (433/848)Counting objects:  52% (441/848)Counting objects:  53% (450/848)Counting objects:  54% (458/848)Counting objects:  55% (467/848)Counting objects:  56% (475/848)Counting objects:  57% (484/848)Counting objects:  58% (492/848)Counting objects:  59% (501/848)Counting objects:  60% (509/848)Counting objects:  61% (518/848)Counting objects:  62% (526/848)Counting objects:  63% (535/848)Counting objects:  64% (543/848)Counting objects:  65% (552/848)Counting objects:  66% (560/848)Counting objects:  67% (569/848)Counting objects:  68% (577/848)Counting objects:  69% (586/848)Counting objects:  70% (594/848)Counting objects:  71% (603/848)Counting objects:  72% (611/848)Counting objects:  73% (620/848)Counting objects:  74% (628/848)Counting objects:  75% (636/848)Counting objects:  76% (645/848)Counting objects:  77% (653/848)Counting objects:  78% (662/848)Counting objects:  79% (670/848)Counting objects:  80% (679/848)Counting objects:  81% (687/848)Counting objects:  82% (696/848)Counting objects:  83% (704/848)Counting objects:  84% (713/848)Counting objects:  85% (721/848)Counting objects:  86% (730/848)Counting objects:  87% (738/848)Counting objects:  88% (747/848)Counting objects:  89% (755/848)Counting objects:  90% (764/848)Counting objects:  91% (772/848)Counting objects:  92% (781/848)Counting objects:  93% (789/848)Counting objects:  94% (798/848)Counting objects:  95% (806/848)Counting objects:  96% (815/848)Counting objects:  97% (823/848)Counting objects:  98% (832/848)Counting objects:  99% (840/848)Counting objects: 100% (848/848)Counting objects: 100% (848/848), done.
-Delta compression using up to 12 threads
-Compressing objects:   0% (1/817)Compressing objects:   1% (9/817)Compressing objects:   2% (17/817)Compressing objects:   3% (25/817)Compressing objects:   4% (33/817)Compressing objects:   5% (41/817)Compressing objects:   6% (50/817)Compressing objects:   7% (58/817)Compressing objects:   8% (66/817)Compressing objects:   9% (74/817)Compressing objects:  10% (82/817)Compressing objects:  11% (90/817)Compressing objects:  12% (99/817)Compressing objects:  13% (107/817)Compressing objects:  14% (115/817)Compressing objects:  15% (123/817)Compressing objects:  16% (131/817)Compressing objects:  17% (139/817)Compressing objects:  18% (148/817)Compressing objects:  19% (156/817)Compressing objects:  20% (164/817)Compressing objects:  21% (172/817)Compressing objects:  22% (180/817)Compressing objects:  23% (188/817)Compressing objects:  24% (197/817)Compressing objects:  25% (205/817)Compressing objects:  26% (213/817)Compressing objects:  27% (221/817)Compressing objects:  28% (229/817)Compressing objects:  29% (237/817)Compressing objects:  30% (246/817)Compressing objects:  31% (254/817)Compressing objects:  32% (262/817)Compressing objects:  33% (270/817)Compressing objects:  34% (278/817)Compressing objects:  35% (286/817)Compressing objects:  36% (295/817)Compressing objects:  37% (303/817)Compressing objects:  38% (311/817)Compressing objects:  39% (319/817)Compressing objects:  40% (327/817)Compressing objects:  41% (335/817)Compressing objects:  42% (344/817)Compressing objects:  43% (352/817)Compressing objects:  44% (360/817)Compressing objects:  45% (368/817)Compressing objects:  46% (376/817)Compressing objects:  47% (384/817)Compressing objects:  48% (393/817)Compressing objects:  49% (401/817)Compressing objects:  50% (409/817)Compressing objects:  51% (417/817)Compressing objects:  52% (425/817)Compressing objects:  53% (434/817)Compressing objects:  54% (442/817)Compressing objects:  55% (450/817)Compressing objects:  56% (458/817)Compressing objects:  57% (466/817)Compressing objects:  58% (474/817)Compressing objects:  59% (483/817)Compressing objects:  60% (491/817)Compressing objects:  61% (499/817)Compressing objects:  62% (507/817)Compressing objects:  63% (515/817)Compressing objects:  64% (523/817)Compressing objects:  65% (532/817)Compressing objects:  66% (540/817)Compressing objects:  67% (548/817)Compressing objects:  68% (556/817)Compressing objects:  69% (564/817)Compressing objects:  70% (572/817)Compressing objects:  71% (581/817)Compressing objects:  72% (589/817)Compressing objects:  73% (597/817)Compressing objects:  74% (605/817)Compressing objects:  75% (613/817)Compressing objects:  76% (621/817)Compressing objects:  77% (630/817)Compressing objects:  78% (638/817)Compressing objects:  79% (646/817)Compressing objects:  80% (654/817)Compressing objects:  81% (662/817)Compressing objects:  82% (670/817)Compressing objects:  83% (679/817)Compressing objects:  84% (687/817)Compressing objects:  85% (695/817)Compressing objects:  86% (703/817)Compressing objects:  87% (711/817)Compressing objects:  88% (719/817)Compressing objects:  89% (728/817)Compressing objects:  90% (736/817)Compressing objects:  91% (744/817)Compressing objects:  92% (752/817)Compressing objects:  93% (760/817)Compressing objects:  94% (768/817)Compressing objects:  95% (777/817)Compressing objects:  96% (785/817)Compressing objects:  97% (793/817)Compressing objects:  98% (801/817)Compressing objects:  99% (809/817)Compressing objects: 100% (817/817)Compressing objects: 100% (817/817), done.
-Writing objects:   0% (1/848)Writing objects:   1% (9/848)Writing objects:   2% (17/848)Writing objects:   3% (26/848)Writing objects:   4% (34/848)Writing objects:   5% (43/848)Writing objects:   6% (51/848)Writing objects:   7% (60/848)Writing objects:   8% (68/848)Writing objects:   9% (77/848)Writing objects:  10% (85/848)Writing objects:  11% (94/848)Writing objects:  12% (102/848)Writing objects:  13% (111/848)Writing objects:  14% (119/848)Writing objects:  15% (128/848)Writing objects:  16% (136/848)Writing objects:  17% (145/848)Writing objects:  18% (154/848)Writing objects:  19% (163/848)Writing objects:  20% (170/848)Writing objects:  21% (179/848)Writing objects:  22% (187/848)Writing objects:  23% (196/848)Writing objects:  24% (204/848)Writing objects:  25% (212/848)Writing objects:  26% (221/848)Writing objects:  27% (229/848)Writing objects:  28% (238/848)Writing objects:  29% (246/848)Writing objects:  30% (255/848)Writing objects:  31% (263/848)Writing objects:  32% (272/848)Writing objects:  33% (280/848)Writing objects:  34% (289/848)Writing objects:  35% (297/848)Writing objects:  36% (306/848)Writing objects:  37% (314/848)Writing objects:  38% (323/848)Writing objects:  39% (332/848)Writing objects:  40% (340/848)Writing objects:  41% (348/848)Writing objects:  42% (358/848)Writing objects:  43% (365/848)Writing objects:  44% (374/848)Writing objects:  45% (382/848)Writing objects:  46% (391/848)Writing objects:  47% (399/848)Writing objects:  48% (408/848)Writing objects:  49% (416/848)Writing objects:  50% (424/848)Writing objects:  51% (433/848)Writing objects:  52% (441/848)Writing objects:  53% (450/848)Writing objects:  54% (458/848)Writing objects:  55% (467/848)Writing objects:  56% (475/848)Writing objects:  57% (484/848)Writing objects:  58% (492/848)Writing objects:  59% (501/848)Writing objects:  60% (509/848)Writing objects:  61% (518/848)Writing objects:  62% (526/848)Writing objects:  63% (535/848)Writing objects:  64% (543/848)Writing objects:  65% (552/848)Writing objects:  66% (560/848)Writing objects:  67% (569/848)Writing objects:  68% (577/848)Writing objects:  69% (586/848)Writing objects:  70% (594/848)Writing objects:  71% (603/848)Writing objects:  72% (611/848)Writing objects:  73% (620/848)Writing objects:  74% (628/848)Writing objects:  75% (636/848)Writing objects:  76% (645/848)Writing objects:  77% (653/848)Writing objects:  78% (662/848)Writing objects:  79% (670/848)Writing objects:  80% (679/848)Writing objects:  81% (687/848)Writing objects:  82% (696/848)Writing objects:  83% (704/848)Writing objects:  84% (713/848)Writing objects:  85% (721/848)Writing objects:  86% (730/848)Writing objects:  87% (738/848)Writing objects:  88% (747/848)Writing objects:  89% (755/848)Writing objects:  90% (764/848)Writing objects:  91% (772/848)Writing objects:  92% (781/848)Writing objects:  93% (789/848)Writing objects:  94% (798/848)Writing objects:  95% (806/848)Writing objects:  96% (815/848)Writing objects:  97% (823/848)Writing objects:  98% (832/848)Writing objects:  99% (840/848)Writing objects: 100% (848/848)Writing objects: 100% (848/848), 1.10 MiB | 6.84 MiB/s, done.
-Total 848 (delta 86), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/86)[Kremote: Resolving deltas:   1% (1/86)[Kremote: Resolving deltas:   2% (2/86)[Kremote: Resolving deltas:   3% (3/86)[Kremote: Resolving deltas:   4% (4/86)[Kremote: Resolving deltas:   5% (5/86)[Kremote: Resolving deltas:   6% (6/86)[Kremote: Resolving deltas:   8% (7/86)[Kremote: Resolving deltas:   9% (8/86)[Kremote: Resolving deltas:  10% (9/86)[Kremote: Resolving deltas:  11% (10/86)[Kremote: Resolving deltas:  12% (11/86)[Kremote: Resolving deltas:  13% (12/86)[Kremote: Resolving deltas:  15% (13/86)[Kremote: Resolving deltas:  16% (14/86)[Kremote: Resolving deltas:  17% (15/86)[Kremote: Resolving deltas:  18% (16/86)[Kremote: Resolving deltas:  19% (17/86)[Kremote: Resolving deltas:  20% (18/86)[Kremote: Resolving deltas:  22% (19/86)[Kremote: Resolving deltas:  23% (20/86)[Kremote: Resolving deltas:  24% (21/86)[Kremote: Resolving deltas:  25% (22/86)[Kremote: Resolving deltas:  26% (23/86)[Kremote: Resolving deltas:  27% (24/86)[Kremote: Resolving deltas:  29% (25/86)[Kremote: Resolving deltas:  30% (26/86)[Kremote: Resolving deltas:  31% (27/86)[Kremote: Resolving deltas:  32% (28/86)[Kremote: Resolving deltas:  33% (29/86)[Kremote: Resolving deltas:  34% (30/86)[Kremote: Resolving deltas:  36% (31/86)[Kremote: Resolving deltas:  37% (32/86)[Kremote: Resolving deltas:  38% (33/86)[Kremote: Resolving deltas:  39% (34/86)[Kremote: Resolving deltas:  40% (35/86)[Kremote: Resolving deltas:  41% (36/86)[Kremote: Resolving deltas:  43% (37/86)[Kremote: Resolving deltas:  44% (38/86)[Kremote: Resolving deltas:  45% (39/86)[Kremote: Resolving deltas:  46% (40/86)[Kremote: Resolving deltas:  47% (41/86)[Kremote: Resolving deltas:  48% (42/86)[Kremote: Resolving deltas:  50% (43/86)[Kremote: Resolving deltas:  51% (44/86)[Kremote: Resolving deltas:  52% (45/86)[Kremote: Resolving deltas:  53% (46/86)[Kremote: Resolving deltas:  54% (47/86)[Kremote: Resolving deltas:  55% (48/86)[Kremote: Resolving deltas:  56% (49/86)[Kremote: Resolving deltas:  58% (50/86)[Kremote: Resolving deltas:  59% (51/86)[Kremote: Resolving deltas:  60% (52/86)[Kremote: Resolving deltas:  61% (53/86)[Kremote: Resolving deltas:  62% (54/86)[Kremote: Resolving deltas:  63% (55/86)[Kremote: Resolving deltas:  65% (56/86)[Kremote: Resolving deltas:  66% (57/86)[Kremote: Resolving deltas:  67% (58/86)[Kremote: Resolving deltas:  68% (59/86)[Kremote: Resolving deltas:  69% (60/86)[Kremote: Resolving deltas:  70% (61/86)[Kremote: Resolving deltas:  72% (62/86)[Kremote: Resolving deltas:  73% (63/86)[Kremote: Resolving deltas:  74% (64/86)[Kremote: Resolving deltas:  75% (65/86)[Kremote: Resolving deltas:  76% (66/86)[Kremote: Resolving deltas:  77% (67/86)[Kremote: Resolving deltas:  79% (68/86)[Kremote: Resolving deltas:  80% (69/86)[Kremote: Resolving deltas:  81% (70/86)[Kremote: Resolving deltas:  82% (71/86)[Kremote: Resolving deltas:  83% (72/86)[Kremote: Resolving deltas:  84% (73/86)[Kremote: Resolving deltas:  86% (74/86)[Kremote: Resolving deltas:  87% (75/86)[Kremote: Resolving deltas:  88% (76/86)[Kremote: Resolving deltas:  89% (77/86)[Kremote: Resolving deltas:  90% (78/86)[Kremote: Resolving deltas:  91% (79/86)[Kremote: Resolving deltas:  93% (80/86)[Kremote: Resolving deltas:  94% (81/86)[Kremote: Resolving deltas:  95% (82/86)[Kremote: Resolving deltas:  96% (83/86)[Kremote: Resolving deltas:  97% (84/86)[Kremote: Resolving deltas:  98% (85/86)[Kremote: Resolving deltas: 100% (86/86)[Kremote: Resolving deltas: 100% (86/86), done.[K
-remote: 
-remote: Create a pull request for 'master' on GitHub by visiting:[K
-remote:      https://github.com/guimilleo/basic-express-node/pull/new/master[K
-remote: 
-To github.com:guimilleo/basic-express-node.git
- * [new branch]      master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit push --set-upstream origin master[39m[36D[1m[31mg[1m[31mt[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [35D[0m[32mg[39m[0m[90mi[90mt push --set-upstream origin master[39m[36D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39mc[90mo[90mm[90mm[90mi[90mt[90m [90m-[90mm[90m"[90mF[90mi[90mr[2C[90m [90mc[90mo[90mm[90mm[90mi[90mt[90m"[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [32D[39mh[90me[90mc[90mk[90mo[90mu[90mt[90m [90ms[90mt[90ma[90mb[90ml[90me[39m[39m [39m [39m [39m [39m [39m [39m [39m [21D[39me[39mc[39mk[39mo[39mu[39mt[39m [39mm[90me[90mn[90mv[90mi[90mo[90m-fix-cotacao[39m[17D[39ma[90ms[90mt[90me[90mr[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[39mi[39m [39m [39m n[?1l>[?2004l
-]2;git checkout main]1;giterror: Your local changes to the following files would be overwritten by checkout:
-	aulas-node.txt
-Please commit your changes or stash them before you switch branches.
-Aborting
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;31m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit checkout main[39m[16D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39mf[90me[90mt[90mc[90mh[90m [90m-[90mp[90mt[39m[39m [39m [39m [39m [12D[39me[39mt[39mc[39mh[39m [39m [39m [39m [?1l>[?2004l
-]2;git fetch]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit fetch[39m[8D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39mm[90me[90mr[90mg[90me[90m stable[39m[11D[39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90me[90mrge stable[39m[11D[90mf[90me[90mt[90mc[90mh[39m[39m [39m [39m [39m [39m [39m [39m [12D[39mc[90mh[90me[90mc[90mk[90mout main[39m[12D[39mh[39me[39mc[39mk[39mo[39mu[39mt[39m [39mm[39ma[39mi[39mn[?1l>[?2004l
-]2;git checkout main]1;giterror: Your local changes to the following files would be overwritten by checkout:
-	aulas-node.txt
-Please commit your changes or stash them before you switch branches.
-Aborting
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;31m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit checkout main[39m[16D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39m[4ms[24m[90mt[90ma[90mt[90mu[90ms[39m[39m [39m [39m [39m [39m [39m [39m [12D[24ms[39mt[39ma[39mt[39mu[39ms[?1l>[?2004l
-]2;git status]1;gitOn branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   aulas-node.txt[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[90mit status[39m[9D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [90m [1m[31mg[1m[31mi[0m[39m[90mt[0m[32mg[39m[0m[90mi[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[4ms[24m[90mcript aulas-node.txt[39m[20D[24m[1m[31ms[1m[31mc[0m[39m[1m[31ms[1m[31mc[1m[31mr[0m[39m[1m[31ms[1m[31mc[0m[39m[0m[90mr[0m[39m[39m[4ms[24m[0m[90mc[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [21D[1m[31me[0m[39m[90mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m[?1l>[?2004l
-]2;exit]1;exit
-Script done on 2022-06-04 13:49:49-03:00 [COMMAND_EXIT_CODE="0"]
-Script started on 2022-06-04 14:01:32-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="136" LINES="19"]
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;32m➜  [36mbasic-node-express[00m [01;34mgit:([31mmain[34m)[00m [K[?1h=[?2004h[1m[31my[0m[39m[90marn add nodeman -D[39m[18D[1m[31my[1m[31ma[0m[39m[1m[31my[1m[31ma[1m[31mr[0m[39m[0m[32my[0m[32ma[0m[32mr[32mn[39m[39m [39md[90me[90mv[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[39me[39mv[?1l>[?2004l
-]2;yarn dev]1;yarn[2K[1G[1myarn run v1.22.10[22m
-[2K[1G[2m$ nomade src/index.js[22m
-/bin/sh: 1: nomade: not found
-[2K[1G[31merror[39m Command failed with exit code 127.
-[2K[1G[34minfo[39m Visit [1mhttps://yarnpkg.com/en/docs/cli/run[22m for documentation about this command.
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;milleo@milleo-A62-LIV:~/Projects/basic-node-express]1;..-node-express[0m[27m[24m[J[01;31m➜  [36mbasic-node-express[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[1m[31my[0m[39m[90marn dev[39m[1m[31my[1m[31ma[0m[39m[1m[31my[1m[31ma[1m[31mr[0m[39m[0m[32my[0m[32ma[0m[32mr[32mn[39m[39m [39m[4ma[24m[90md[90md[90m nodeman -D[39m[13D[24ma[39md[39md[39m [39m[4mn[24m[4mn[39m[4mo[24m[4mo[39m[4md[24m[4md[39m[4me[24m[24mn[24mo[24md[24me[39mm[39mo[39m [39m [39m [39m n -D[?1l>[?2004l
-]2;yarn add nodemon -D]1;yarn[2K[1G[1myarn add v1.22.10[22m
-[2K[1G[2m[1/4][22m Resolving packages...
-[1G⠁ [0K[1G⠂ nodemon[0K[1G⠄ nodemon[0K[1G⡀ nodemon[0K[1G⢀ update-notifier@^5.1.0[0K[1G⠠ ms@^2.1.1[0K[1G⠐ binary-extensions@^2.0.0[0K[1G⠈ wrap-ansi@^7.0.0[0K[1G⠁ package-json@^6.3.0[0K[1G⠂ yallist@^4.0.0[0K[1G⠄ strip-ansi@^6.0.0[0K[1G⡀ color-convert@^2.0.1[0K[1G⢀ ansi-regex@^5.0.1[0K[1G⠠ rc@^1.2.8[0K[1G⠐ url-parse-lax@^3.0.0[0K[1G⠈ mimic-response@^1.0.0[0K[1G⠁ prepend-http@^2.0.0[0K[1G⠂ mimic-response@^1.0.0[0K[1G⠄ lowercase-keys@^1.0.0[0K[1G⡀ wrappy@1[0K[1G⢀ picomatch@^2.0.4[0K[1G⠠ picomatch@^2.0.4[0K[2K[1G[2K[1G[2m[2/4][22m Fetching packages...
-[2K[1G[1G[-------------------------------------------------------------------------------------------------------------------------------] 0/173[1G[#########################################-------------------------------------------------------------------------------------] 56/173[1G[##############################################--------------------------------------------------------------------------------] 63/173[1G[#####################################################-------------------------------------------------------------------------] 73/173[1G[##########################################################--------------------------------------------------------------------] 79/173[1G[#############################################################-----------------------------------------------------------------] 84/173[1G[######################################################################--------------------------------------------------------] 96/173[1G[###############################################################################----------------------------------------------] 109/173[1G[###########################################################################################----------------------------------] 126/173[1G[#################################################################################################----------------------------] 134/173[1G[######################################################################################################-----------------------] 141/173[1G[############################################################################################################-----------------] 149/173[1G[###################################################################################################################----------] 159/173[1G[##########################################################################################################################---] 169/173[2K[1G[34minfo[39m fsevents@2.3.2: The platform "linux" is incompatible with this module.
-[2K[1G[34minfo[39m "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
-[1G[#############################################################################################################################] 173/173[2K[1G[2m[3/4][22m Linking dependencies...
-[2K[1G[2K[1G[1G[-------------------------------------------------------------------------------------------------------------------------------] 0/172[2K[1G[2K[1G[1G[------------------------------------------------------------------------------------------------------------------------------] 0/1489[1G[##################----------------------------------------------------------------------------------------------------------] 214/1489[1G[############################################--------------------------------------------------------------------------------] 530/1489[1G[#####################################################################-------------------------------------------------------] 828/1489[1G[###############################################################################################----------------------------] 1149/1489[1G[###########################################################################################################################] 1489/1489[2K[1G[2K[1G[1G[-------------------------------------------------------------------------------------------------------------------------------] 0/335[2K[1G[2m[4/4][22m Building fresh packages...
-[1G⠁ [0K[1G[#############################################################################################################################] 335/335[1G[2m[1/1][22m ⠂ nodemon[0K[1G[2m[1/1][22m ⠄ nodemon[0K[2K[1G[2K[1G[32msuccess[39m Saved lockfile.
-[2K[1G[32msuccess[39m Saved 99 new dependencies.
-[2K[1G[34minfo[39m Direct dependencies
-[2K[1G└─ nodemon@2.0.16
-[2K[1G[34minfo[39m All dependencies
-├─ @sindresorhus/is@0.14.0
-├─ @szmarczak/http-timer@1.1.2
-├─ abbrev@1.1.1
-├─ ansi-align@3.0.1
-├─ ansi-regex@5.0.1
-├─ ansi-styles@4.3.0
-├─ anymatch@3.1.2
-├─ balanced-match@1.0.2
-├─ binary-extensions@2.2.0
-├─ boxen@5.1.2
-├─ brace-expansion@1.1.11
-├─ braces@3.0.2
-├─ cacheable-request@6.1.0
-├─ camelcase@6.3.0
-├─ chokidar@3.5.3
-├─ ci-info@2.0.0
-├─ cli-boxes@2.2.1
-├─ clone-response@1.0.2
-├─ color-convert@2.0.1
-├─ color-name@1.1.4
-├─ concat-map@0.0.1
-├─ configstore@5.0.1
-├─ crypto-random-string@2.0.0
-├─ decompress-response@3.3.0
-├─ deep-extend@0.6.0
-├─ defer-to-connect@1.1.3
-├─ dot-prop@5.3.0
-├─ duplexer3@0.1.4
-├─ emoji-regex@8.0.0
-├─ end-of-stream@1.4.4
-├─ escape-goat@2.1.1
-├─ fill-range@7.0.1
-├─ get-stream@4.1.0
-├─ glob-parent@5.1.2
-├─ global-dirs@3.0.0
-├─ got@9.6.0
-├─ graceful-fs@4.2.10
-├─ has-flag@3.0.0
-├─ has-yarn@2.1.0
-├─ http-cache-semantics@4.1.0
-├─ ignore-by-default@1.0.1
-├─ import-lazy@2.1.0
-├─ imurmurhash@0.1.4
-├─ ini@2.0.0
-├─ is-binary-path@2.1.0
-├─ is-ci@2.0.0
-├─ is-extglob@2.1.1
-├─ is-fullwidth-code-point@3.0.0
-├─ is-glob@4.0.3
-├─ is-installed-globally@0.4.0
-├─ is-npm@5.0.0
-├─ is-number@7.0.0
-├─ is-obj@2.0.0
-├─ is-path-inside@3.0.3
-├─ is-yarn-global@0.3.0
-├─ json-buffer@3.0.0
-├─ keyv@3.1.0
-├─ latest-version@5.1.0
-├─ lowercase-keys@1.0.1
-├─ lru-cache@6.0.0
-├�
+yarn init -y
+yarn add express
+yarn add nodemon -D # executa o hot realod do código
