@@ -1,3 +1,4 @@
 yarn init -y
 yarn add express
-yarn add nodemon -D # executa o hot realod do código
+# executa o hot realod do código
+yarn add nodemon -D 
